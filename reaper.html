@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>OverPwn</title>
+	<title>OverPwn - Pharah</title>
 	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/overpwn.css">
 	<meta charset="utf-8">
 </head>
-<body>
+<body onload="alternarCorTabela()">
 		
 <!-- Criação da navbar -->
 
@@ -15,13 +15,13 @@
 	  <div class="container-fluid">
 	   <!-- Criação do icone na navbar -->
 	    <div class="navbar-header">
-	      <a class="navbar-brand" href="#"><img id="logotipo" src="img/overwatch-logo.png" width="25px" heigth="25px" alt="Logotipo"></a>
+	      <a class="navbar-brand" href="index.html"><img id="logotipo" src="img/overwatch-logo.png" width="25px" heigth="25px" alt="Logotipo"></a>
 	    </div>
 
 	    <!-- Criação do link Home na navbar -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav" id="navbarItems">
-	        <li><a href="#">Home</a></li>
+	        <li><a href="index.html">Home</a></li>
 	        	        <li class="dropdown">
 	         <!-- Criação do menu Herois na navbar -->
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="false">Heróis<span class="caret"></span></a>
@@ -33,7 +33,7 @@
 	                <li><a href="genji.html"><img id="logotipo" src="img/navbar_heroes/Genji_link.png" width="30px" heigth="30px" alt="Genji">Genji</a></li>
 		            <li><a href="mccree.html"><img id="logotipo" src="img/navbar_heroes/McCree_link.png" width="30px" heigth="30px" alt="McCree">McCree</a></li>
 		            <li><a href="pharah.html"><img id="logotipo" src="img/navbar_heroes/Pharah_link.png" width="30px" heigth="30px" alt="Pharah">Pharah</a></li>
-		            <li><a href="reaper.html"><img id="logotipo" src="img/navbar_heroes/Reaper_link.png" width="30px" heigth="30px" alt="Reaper">Reaper</a></li>
+		            <li><a href="#"><img id="logotipo" src="img/navbar_heroes/Reaper_link.png" width="30px" heigth="30px" alt="Reaper">Reaper</a></li>
 		            <li><a href="soldier76.html"><img id="logotipo" src="img/navbar_heroes/Soldier_76_link.png" width="30px" heigth="30px" alt="Soldier 76">Soldier 76</a></li>
 		            <li><a href="sombra.html"><img id="logotipo" src="img/navbar_heroes/Sombra_link.png" width="30px" heigth="30px" alt="Sombra">Sombra</a></li>
 		            <li><a href="tracer.html"><img id="logotipo" src="img/navbar_heroes/Tracer_link.png" width="30px" heigth="30px" alt="Tracer">Tracer</a></li>
@@ -146,9 +146,257 @@
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
     </nav>
-	
+    	<i align="center">"A morte anda entre vocês.</i>
+    <div class="col-sm-9">
+		
+					Há quem fale sobre um terrorista em um manto preto, conhecido apenas como Reaper. Sua identidade e motivações são um mistério. O que se sabe é que onde ele aparece, a morte o segue.<br><br>
 
+					O Reaper é um mercenário extremamente volátil, um matador sem remorso ou piedade, responsável por ataques terroristas ao redor do mundo. Ele lutou em muitos conflitos armados nas últimas décadas, sem demonstrar qualquer lealdade a nenhuma causa ou organização.<br><br>
+
+					Sobreviventes descreveram uma sombra negra, vagando como fantasma pelos campos de batalha mais infernais. Os poucos corpos recuperados daqueles que ele assassinou são pálidos, vazios e sem vida, com suas células apresentando sinais intensos de degradação. É possível que ele seja o resultado da falha de um experimento genético, que força suas células a se degenerarem e regenerarem simultaneamente, em uma velocidade ultra acelerada.<br><br>
+
+					Aqueles que têm tentado rastrear seus movimentos começaram a enxergar um padrão em suas aparições. Eles acreditam que Reaper está caçando antigos agentes da Overwatch e os eliminando sistematicamente.
+  </div>  		
+    	<table id="heroInfo" class="col-sm-3">
+			<thead>
+				<tr>
+					<td></td>
+					<td align=left>
+						<b>Reaper</b>
+					</td>
+
+				</tr>
+				<tr>
+					<td></td>
+					<td align=left>
+						<img id="logotipo" src="img/hero_pics/Reaper/Reaper-portrait.png" width="150px" heigth="150px" alt="Reaper" class="col-sm-9">
+					</td>
+
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<b>Nome Completo</b>
+					</td>
+					<td>
+						Gabriel Reyes
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Idade</b>
+					</td>
+					<td>
+						Desconhecida
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Função</b>
+					</td>
+					<td>
+						<img id="logotipo" src="img/OffenseIcon.png" width="20px" heigth="20px" alt="Ofensivo"> Ofensivo
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Afiliações</b>
+					</td>
+					<td>
+						Overwatch (formalmente)<br>Blackwatch (formalmente)<br>Várias, incluindo a Talon
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Ocupação</b>
+					</td>
+					<td>
+						Mercenário
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Base de Operações</b>
+					</td>
+					<td>
+						Desconhecida
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Relacionamentos</b>
+					</td>
+					<td>
+						Desconhecido
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+
+	<div class="col-sm-12">
+	    <h2 align="center">Cosméticos</h2>
+	    <table align="center" id="skins">
+	    	<tr>
+	    		<td></td>
+	    		<td></td>
+	    		<td>
+	    			Comum (Gratuito)
+	    		</td>   
+	    		<td></td>
+	    		<td></td>
+	    	</tr>
+	    	<tr>
+
+	    		<td></td>
+	    		<td></td>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/Reaper/Reaper_Skin_Classic.png" width="150px" heigth="150px" alt="Reaper-Classic-Skin"><br>Clássico
+	    		</td> 
+	    		<td></td> 
+	    		<td></td>		
+	    	</tr>
+	    	<tr>
+	    		<td></td>
+	    		<td></td>
+	    		<td>
+	    			Raro - 75 <img id="logotipo" src="img/Currency.png" width="20px" heigth="20px" alt="Currency">
+	    		</td>  
+	    		<td></td>	
+	    		<td></td>
+	    	</tr>
+	    	<tr>
+	    		<td>
+	    			<div class="col-sm-3">
+	    				<img id="logotipo" src="img/hero_pics/Reaper/Reaper_Skin_Blood.png" width="150px" heigth="150px" alt="Reaper-Blood-Skin"><br>Blood
+	    			</div>
+	    			
+	    		</td>  
+	    		 <td>
+	    		 	<div class="col-sm-3">
+	    				<img id="logotipo" src="img/hero_pics/Reaper/Reaper_Skin_Midnight.png" width="150px" heigth="150px" alt="Reaper-Midnight-Skin"><br>Midnight
+	    			</div>
+	    			
+	    		</td>  
+	    		<td></td>
+	    		<td>
+	    			<div class="col-sm-3">
+	    				<img id="logotipo" src="img/hero_pics/Reaper/Reaper_Skin_Moss.png" width="150px" heigth="150px" alt="Reaper-Moss-Skin"><br>Moss
+	    			</div>		
+	    		</td>
+	    		<td>
+	    			<div class="col-sm-3">
+	    				<img id="logotipo" src="img/hero_pics/Reaper/Reaper_Skin_Royal.png" width="150px" heigth="150px" alt="Reaper-Royal-Skin"><br>Royal
+	    			</div>	
+	    			
+	    		</td> 		
+	    	</tr>  
+	    	 <tr>
+	    		<td></td>
+	    		<td></td>
+	    		<td>
+	    			Épico - 250 <img id="logotipo" src="img/Currency.png" width="20px" heigth="20px" alt="Currency">
+	    		</td>  
+	    		<td></td>	
+	    		<td></td>
+	    	</tr>
+	    	<tr>
+	    		
+	    		<td></td>  
+	    		 <td>
+	    			<img id="logotipo" src="img/hero_pics/Reaper/Reaper_Skin_Desert.png" width="150px" heigth="150px" alt="Reaper-Desert-Skin"><br>Desert
+	    		</td>  
+	    		<td></td>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/Reaper/Reaper_Skin_Wight.png" width="150px" heigth="150px" alt="Reaper-Wight-Skin"><br>Wight
+	    		</td> 
+	    		<td></td> 		
+	    	</tr>  
+	  		  	<tr>
+	    		<td></td>
+	    		<td></td>
+	    		<td>
+	    			Épico (Paraíso Congelado) - 750 <img id="logotipo" src="img/Currency.png" width="20px" heigth="20px" alt="Currency">
+	    		</td>   
+	    		<td></td>
+	    		<td></td>
+	    	</tr>
+	    	<tr>
+	    		<td></td>
+	    		<td></td>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/Reaper/Reaper_Skin_Shiver.png" width="150px" heigth="150px" alt="Reaper-Shiver-Skin"><br>Shiver
+	    		</td> 
+	    		<td></td> 
+	    		<td></td>	
+	    	</tr>
+	    	<tr>
+	    		<td></td>
+	    		<td></td>
+	    		<td>
+	    			Lendário - 1000 <img id="logotipo" src="img/Currency.png" width="20px" heigth="20px" alt="Currency">
+	    		</td>   
+	    		<td></td>
+	    		<td></td>
+	    	</tr>
+	    	<tr>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/Reaper/Reaper_Skin_Nevermore.png" width="150px" heigth="150px" alt="Reaper-Nevermore-Skin"><br>Nevermore
+	    		</td>  
+	    		 <td>
+	    			<img id="logotipo" src="img/hero_pics/Reaper/Reaper_Skin_Plague_Doctor.png" width="150px" heigth="150px" alt="Reaper-Plague-Doctor-Skin"><br>Plague Doctor
+	    		</td>  
+	    		<td></td>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/Reaper/Reaper_Skin_El_Blanco.png" width="150px" heigth="150px" alt="Reaper-El-Blanco-Skin"><br>El Blanco
+	    		</td>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/Reaper/Reaper_Skin_Mariachi.png" width="150px" heigth="150px" alt="Reaper-Mariachi-Skin"><br>Mariachi
+	    		</td> 		
+	    	</tr> 
+	    	<tr>
+	    		<td></td>
+	    		<td></td>
+	    		<td>
+	    			Lendário (Terror de Halloween) - 3000 <img id="logotipo" src="img/Currency.png" width="20px" heigth="20px" alt="Currency">
+	    		</td>   
+	    		<td></td>
+	    		<td></td>
+	    	</tr>
+	    	<tr>
+	    		<td></td>
+	    		<td></td>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/Reaper/HalloweenTerror_Reaper_Skin_Pumpkin.png" width="150px" heigth="150px" alt="Reaper-Pumpkin-Skin"><br>Pumpkin
+	    		</td> 
+	    		<td></td> 
+	    		<td></td>		
+	    	</tr>
+	    	<tr>
+	    		<td></td>
+	    		<td></td>
+	    		<td>
+	    			Lendário (Overwatch: Origins)
+	    		</td>   
+	    		<td></td>
+	    		<td></td>
+	    	</tr>
+	    	<tr>
+	    		<td></td>
+	    		<td></td>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/Reaper/Reaper_Skin_Blackwatch_Reyes.png" width="150px" heigth="150px" alt="Reaper-Blackwatch-Reyes-Skin"><br>Blackwatch Reyes
+	    		</td> 
+	    		<td></td> 
+	    		<td></td>		
+	    	</tr>
+	    </table>
+   	</div>	
+   	<br><br><br>
+   	<div id="direitos" class="col-sm-12"><h6>Copyright © Overpwn - Todos os direitos reservados</h6></div>
 	<script src="lib/jquery/jquery.min.js"></script>
 	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/overpwn.js"></script>
 </body>
 </html>

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>OverPwn</title>
+	<title>OverPwn - McCree</title>
 	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/overpwn.css">
 	<meta charset="utf-8">
 </head>
-<body>
+<body onload="alternarCorTabela()">
 		
 <!-- Criação da navbar -->
 
@@ -15,13 +15,13 @@
 	  <div class="container-fluid">
 	   <!-- Criação do icone na navbar -->
 	    <div class="navbar-header">
-	      <a class="navbar-brand" href="#"><img id="logotipo" src="img/overwatch-logo.png" width="25px" heigth="25px" alt="Logotipo"></a>
+	      <a class="navbar-brand" href="index.html"><img id="logotipo" src="img/overwatch-logo.png" width="25px" heigth="25px" alt="Logotipo"></a>
 	    </div>
 
 	    <!-- Criação do link Home na navbar -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav" id="navbarItems">
-	        <li><a href="#">Home</a></li>
+	        <li><a href="index.html">Home</a></li>
 	        	        <li class="dropdown">
 	         <!-- Criação do menu Herois na navbar -->
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="false">Heróis<span class="caret"></span></a>
@@ -31,7 +31,7 @@
                 <a tabindex="-1"><img id="logotipo" src="img/OffenseIcon.png" width="20px" heigth="20px" alt="Ofensivo"><b>Ofensivo</b></a>
                 <ul class="dropdown-menu">
 	                <li><a href="genji.html"><img id="logotipo" src="img/navbar_heroes/Genji_link.png" width="30px" heigth="30px" alt="Genji">Genji</a></li>
-		            <li><a href="mccree.html"><img id="logotipo" src="img/navbar_heroes/McCree_link.png" width="30px" heigth="30px" alt="McCree">McCree</a></li>
+		            <li><a href="#"><img id="logotipo" src="img/navbar_heroes/McCree_link.png" width="30px" heigth="30px" alt="McCree">McCree</a></li>
 		            <li><a href="pharah.html"><img id="logotipo" src="img/navbar_heroes/Pharah_link.png" width="30px" heigth="30px" alt="Pharah">Pharah</a></li>
 		            <li><a href="reaper.html"><img id="logotipo" src="img/navbar_heroes/Reaper_link.png" width="30px" heigth="30px" alt="Reaper">Reaper</a></li>
 		            <li><a href="soldier76.html"><img id="logotipo" src="img/navbar_heroes/Soldier_76_link.png" width="30px" heigth="30px" alt="Soldier 76">Soldier 76</a></li>
@@ -146,9 +146,257 @@
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
     </nav>
-	
+    	<i align="center">"A justiça não vai se fazer sozinha."</i>
+    <div class="col-sm-9">
+		
+					Armado com seu revólver Pacificador, o fora da lei Jesse McCree faz justiça com seus próprios termos. <br><br>
+					
+					McCree já tinha uma reputação como membro da notória gangue Deadlock, que traficava armas ilícitas e equipamentos militares por todo o Sudoeste Americano, quando ele e seus comparsas foram apreendidos por uma operação da Overwatch. Com suas habilidades como atirador e sua engenhosidade, ele foi dado a escolha de apodrecer em uma prisão de segurança máxima ou de se juntar à Blackwatch, a divisão de operações secretas da Overwatch. Ele escolheu a segunda opção. <br><br>
+					
+					Apesar de cínico no começo, ele passou a acreditar que podia compensar pelos pecados que cometera no passado, acertando as injustiças do mundo. McCree se satisfez com a flexibilidade delegada ao grupo clandestino Blackwatch, liberto de burocracias e protocolos. Mas à medida que a influência da Overwatch enfraqueceu, membros rebeldes dentro da Blackwatch tramaram para derrubar a organização e usá-la para seus próprios fins. Sem querer participar dessas disputas internas, McCree resolveu partir sozinho e desapareceu.<br><br>
+					
+					Anos depois, ele ressurgiu como um atirador mercenário. Mas apesar de seus talentos serem buscados por grupos grandes e pequenos, ele só luta por causas que acredita serem justas.
+  </div>  		
+    	<table id="heroInfo" class="col-sm-3">
+			<thead>
+				<tr>
+					<td></td>
+					<td class="col-sm-11" align=left>
+						<b>McCree</b>
+					</td>
 
+				</tr>
+				<tr>
+					<td></td>
+					<td id="imgHero">
+						<img id="logotipo" src="img/hero_pics/mccree/mccree-portrait.png" width="150px" heigth="150px" alt="McCree" class="col-sm-9">
+					</td>
+
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<b>Nome Completo</b>
+					</td>
+					<td>
+						Jesse McCree
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Idade</b>
+					</td>
+					<td>
+						37 anos
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Função</b>
+					</td>
+					<td>
+						<img id="logotipo" src="img/OffenseIcon.png" width="20px" heigth="20px" alt="Ofensivo"> Ofensivo
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Afiliações</b>
+					</td>
+					<td>
+						Overwatch (formalmente)<br>Blackwatch (formalmente)
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Ocupação</b>
+					</td>
+					<td>
+						Caçador de Recompensas
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Base de Operações</b>
+					</td>
+					<td>
+						Santa Fé, Novo México, EUA
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Relacionamentos</b>
+					</td>
+					<td>
+						Desconhecido
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+
+	<div class="col-sm-12">
+	    <h2 align="center">Cosméticos</h2>
+	    <table align="center" id="skins">
+	    	<tr>
+	    		<td></td>
+	    		<td></td>
+	    		<td>
+	    			Comum (Gratuito)
+	    		</td>   
+	    		<td></td>
+	    		<td></td>
+	    	</tr>
+	    	<tr>
+
+	    		<td></td>
+	    		<td></td>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/mccree/McCree_Skin_Classic.png" width="150px" heigth="150px" alt="McCree-Classic-Skin"><br>Clássico
+	    		</td> 
+	    		<td></td> 
+	    		<td></td>		
+	    	</tr>
+	    	<tr>
+	    		<td></td>
+	    		<td></td>
+	    		<td>
+	    			Raro - 75 <img id="logotipo" src="img/Currency.png" width="20px" heigth="20px" alt="Currency">
+	    		</td>  
+	    		<td></td>	
+	    		<td></td>
+	    	</tr>
+	    	<tr>
+	    		<td>
+	    			<div class="col-sm-3">
+	    				<img id="logotipo" src="img/hero_pics/mccree/McCree_Skin_Ebony.png" width="150px" heigth="150px" alt="McCree-Ebony-Skin"><br>Ebony
+	    			</div>
+	    			
+	    		</td>  
+	    		 <td>
+	    		 	<div class="col-sm-3">
+	    				<img id="logotipo" src="img/hero_pics/mccree/McCree_Skin_Lake.png" width="150px" heigth="150px" alt="McCree-Lake-Skin"><br>Lake
+	    			</div>
+	    			
+	    		</td>  
+	    		<td></td>
+	    		<td>
+	    			<div class="col-sm-3">
+	    				<img id="logotipo" src="img/hero_pics/mccree/McCree_Skin_Sage.png" width="150px" heigth="150px" alt="McCree-Sage-Skin"><br>Sage
+	    			</div>		
+	    		</td>
+	    		<td>
+	    			<div class="col-sm-3">
+	    				<img id="logotipo" src="img/hero_pics/mccree/McCree_Skin_Wheat.png" width="150px" heigth="150px" alt="McCree-Wheat-Skin"><br>Wheat
+	    			</div>	
+	    			
+	    		</td> 		
+	    	</tr>  
+	    	 <tr>
+	    		<td></td>
+	    		<td></td>
+	    		<td>
+	    			Épico - 250 <img id="logotipo" src="img/Currency.png" width="20px" heigth="20px" alt="Currency">
+	    		</td>  
+	    		<td></td>	
+	    		<td></td>
+	    	</tr>
+	    	<tr>
+	    		
+	    		<td></td>  
+	    		 <td>
+	    			<img id="logotipo" src="img/hero_pics/mccree/McCree_Skin_On_the_Range.png" width="150px" heigth="150px" alt="McCree-On-the-Range-Skin"><br>On the Range
+	    		</td>  
+	    		<td></td>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/mccree/McCree_Skin_White_Hat.png" width="150px" heigth="150px" alt="McCree-White-Hat-Skin"><br>White Hat
+	    		</td> 
+	    		<td></td> 		
+	    	</tr>  
+	  		  	<tr>
+	    		<td></td>
+	    		<td></td>
+	    		<td>
+	    			Épico (Jogos de Verão)
+	    		</td>   
+	    		<td></td>
+	    		<td></td>
+	    	</tr>
+	    	<tr>
+	    		<td></td>
+	    		<td></td>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/mccree/Summer2016_McCree_Skin_American.png" width="150px" heigth="150px" alt="McCree-American-Skin"><br>American
+	    		</td> 
+	    		<td></td> 
+	    		<td></td>	
+	    	</tr>
+	    	<tr>
+	    		<td></td>
+	    		<td></td>
+	    		<td>
+	    			Épico (Paraíso Congelado) - 750 <img id="logotipo" src="img/Currency.png" width="20px" heigth="20px" alt="Currency">
+	    		</td>   
+	    		<td></td>
+	    		<td></td>
+	    	</tr>
+	    	<tr>
+	    		<td></td>
+	    		<td></td>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/mccree/McCree_Skin_Scrooge.png" width="150px" heigth="150px" alt="McCree-Scrooge-Skin"><br>Scrooge
+	    		</td> 
+	    		<td></td> 
+	    		<td></td>	
+	    	</tr>
+	    	<tr>
+	    		<td></td>
+	    		<td></td>
+	    		<td>
+	    			Lendário - 1000 <img id="logotipo" src="img/Currency.png" width="20px" heigth="20px" alt="Currency">
+	    		</td>   
+	    		<td></td>
+	    		<td></td>
+	    	</tr>
+	    	<tr>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/mccree/McCree_Skin_Gambler.png" width="150px" heigth="150px" alt="McCree-Gambler-Skin"><br>Gambler
+	    		</td>  
+	    		 <td>
+	    			<img id="logotipo" src="img/hero_pics/mccree/McCree_Skin_Riverboat.png" width="150px" heigth="150px" alt="McCree-Riverboat-Skin"><br>Riverboat
+	    		</td>  
+	    		<td></td>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/mccree/McCree_Skin_Mystery_Man.png" width="150px" heigth="150px" alt="McCree-Mystery-Man-Skin"><br>Mystery Man
+	    		</td>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/mccree/McCree_Skin_Vigilante.png" width="150px" heigth="150px" alt="McCree-Vigilante-Skin"><br>Vigilante
+	    		</td> 		
+	    	</tr> 
+	    	<tr>
+	    		<td></td>
+	    		<td></td>
+	    		<td>
+	    			Lendário (Insurreição) - 3000 <img id="logotipo" src="img/Currency.png" width="20px" heigth="20px" alt="Currency">
+	    		</td>   
+	    		<td></td>
+	    		<td></td>
+	    	</tr>
+	    	<tr>
+	    		<td></td>
+	    		<td></td>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/mccree/McCree_Skin_Blackwatch.png" width="150px" heigth="150px" alt="McCree-Blackwatch-Skin"><br>Blackwatch
+	    		</td> 
+	    		<td></td> 
+	    		<td></td>		
+	    	</tr>
+	    </table>
+   	</div>	
+   	<br><br><br>
+   	<div id="direitos" class="col-sm-12"><h6>Copyright © Overpwn - Todos os direitos reservados</h6></div>
 	<script src="lib/jquery/jquery.min.js"></script>
 	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/overpwn.js"></script>
 </body>
 </html>
