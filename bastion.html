@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OverPwn - Bastion</title>
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/overpwn.css">
+	<meta charset="utf-8">
+</head>
+<body onload="alternarCorTabela()">
+		
+<!-- Criação da navbar -->
+
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	   <!-- Criação do icone na navbar -->
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="index.html"><img id="logotipo" src="img/overwatch-logo.png" width="25px" heigth="25px" alt="Logotipo"></a>
+	    </div>
+
+	    <!-- Criação do link Home na navbar -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav" id="navbarItems">
+	        <li><a href="index.html">Home</a></li>
+	        	        <li class="dropdown">
+	         <!-- Criação do menu Herois na navbar -->
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="false">Heróis<span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <!-- Criação do  submenu contendo herois Ofensivos dentro do menu Herois na navbar -->
+	            <li class="dropdown-submenu">
+                <a tabindex="-1"><img id="logotipo" src="img/OffenseIcon.png" width="20px" heigth="20px" alt="Ofensivo"><b>Ofensivo</b></a>
+                <ul class="dropdown-menu">
+	                <li><a href="genji.html"><img id="logotipo" src="img/navbar_heroes/Genji_link.png" width="30px" heigth="30px" alt="Genji">Genji</a></li>
+		            <li><a href="mccree.html"><img id="logotipo" src="img/navbar_heroes/McCree_link.png" width="30px" heigth="30px" alt="McCree">McCree</a></li>
+		            <li><a href="pharah.html"><img id="logotipo" src="img/navbar_heroes/Pharah_link.png" width="30px" heigth="30px" alt="Pharah">Pharah</a></li>
+		            <li><a href="reaper.html"><img id="logotipo" src="img/navbar_heroes/Reaper_link.png" width="30px" heigth="30px" alt="Reaper">Reaper</a></li>
+		            <li><a href="soldier76.html"><img id="logotipo" src="img/navbar_heroes/Soldier_76_link.png" width="30px" heigth="30px" alt="Soldier 76">Soldado 76</a></li>
+		            <li><a href="sombra.html"><img id="logotipo" src="img/navbar_heroes/Sombra_link.png" width="30px" heigth="30px" alt="Sombra">Sombra</a></li>
+		            <li><a href="tracer.html"><img id="logotipo" src="img/navbar_heroes/Tracer_link.png" width="30px" heigth="30px" alt="Tracer">Tracer</a></li>
+                </ul>
+              </li>
+              	<!-- Criação do  submenu contendo herois Defensivos dentro do menu Herois na navbar -->
+	            <li class="dropdown-submenu">
+                <a tabindex="-1"><img id="logotipo" src="img/DefenseIcon.png" width="20px" heigth="20px" alt="Defensivo"><b>Defensivo</b></a>
+                <ul class="dropdown-menu">
+	                <li><a href="#"><img id="logotipo" src="img/navbar_heroes/Bastion_link.png" width="30px" heigth="30px" alt="Bastion">Bastion</a></li>
+		            <li><a href="hanzo.html"><img id="logotipo" src="img/navbar_heroes/Hanzo_link.png" width="30px" heigth="30px" alt="Hanzo">Hanzo</a></li>
+		            <li><a href="junkrat.html"><img id="logotipo" src="img/navbar_heroes/Junkrat_link.png" width="30px" heigth="30px" alt="Junkrat">Junkrat</a></li>
+		            <li><a href="mei.html"><img id="logotipo" src="img/navbar_heroes/Mei_link.png" width="30px" heigth="30px" alt="Mei">Mei</a></li>
+		            <li><a href="torbjorn.html"><img id="logotipo" src="img/navbar_heroes/Torbjörn_link.png" width="30px" heigth="30px" alt="Torbjörn">Torbjörn</a></li>
+		            <li><a href="widowmaker.html"><img id="logotipo" src="img/navbar_heroes/Widowmaker_link.png" width="30px" heigth="30px" alt="Widowmaker">Widowmaker</a></li>
+                </ul>
+              </li>
+              	<!-- Criação do  submenu contendo herois Tanques dentro do menu Herois na navbar -->
+	            <li class="dropdown-submenu">
+                <a tabindex="-1"><img id="logotipo" src="img/TankIcon.png" width="20px" heigth="20px" alt="Tanque"><b>Tanque</b></a>
+                <ul class="dropdown-menu">
+		            <li><a href="dva.html"><img id="logotipo" src="img/navbar_heroes/D.Va_link.png" width="30px" heigth="30px" alt="D.Va">D.Va</a></li>
+		            <li><a href="orisa.html"><img id="logotipo" src="img/navbar_heroes/Orisa_link.png" width="30px" heigth="30px" alt="Orisa">Orisa</a></li>
+		            <li><a href="reinhardt.html"><img id="logotipo" src="img/navbar_heroes/Reinhardt_link.png" width="30px" heigth="30px" alt="Reinhardt">Reinhardt</a></li>
+		            <li><a href="roadhog.html"><img id="logotipo" src="img/navbar_heroes/Roadhog_link.png" width="30px" heigth="30px" alt="Roadhog">Roadhog</a></li>
+		            <li><a href="winston.html"><img id="logotipo" src="img/navbar_heroes/Winston_link.png" width="30px" heigth="30px" alt="Winston">Winston</a></li>
+		            <li><a href="zarya.html"><img id="logotipo" src="img/navbar_heroes/Zarya_link.png" width="30px" heigth="30px" alt="Zarya">Zarya</a></li>
+                </ul>
+              </li>
+              	<!-- Criação do  submenu contendo herois Suportes dentro do menu Herois na navbar -->
+	            <li class="dropdown-submenu">
+                <a tabindex="-1"><img id="logotipo" src="img/SupportIcon.png" width="20px" heigth="20px" alt="Ofensivo"><b>Suporte</b></a>
+                <ul class="dropdown-menu">
+	                <li><a href="ana.html"><img id="logotipo" src="img/navbar_heroes/Ana_link.png" width="30px" heigth="30px" alt="Ana">Ana</a></li>
+		            <li><a href="lucio.html"><img id="logotipo" src="img/navbar_heroes/Lúcio_link.png" width="30px" heigth="30px" alt="Lúcio">Lúcio</a></li>
+		            <li><a href="mercy.html"><img id="logotipo" src="img/navbar_heroes/Mercy_link.png" width="30px" heigth="30px" alt="Mercy">Mercy</a></li>
+		            <li><a href="symmetra.html"><img id="logotipo" src="img/navbar_heroes/Symmetra_link.png" width="30px" heigth="30px" alt="Symmetra">Symmetra</a></li>
+		            <li><a href="zenyatta.html"><img id="logotipo" src="img/navbar_heroes/Zenyatta_link.png" width="30px" heigth="30px" alt="Zenyatta">Zenyatta</a></li>
+                </ul>
+              </li>
+	        </ul>
+	       </li>
+	        <li class="dropdown">
+	          <!-- Criação do menu Mapas na navbar -->
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="false">Mapas<span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li class="dropdown-submenu">
+	            <!-- Criação do  submenu contendo mapas de Ataque menu Mapas na navbar -->	
+                <a tabindex="-1"><b>Ataque</b></a>
+                <ul class="dropdown-menu">
+	                <li><a href="anubis.html"><img id="logotipo" src="img/navbar_maps/Temple_of_Anubis_link.png" width="30px" heigth="30px" alt="Anubis">Templo de Anúbis</a></li>
+		            <li><a href="hanamura.html"><img id="logotipo" src="img/navbar_maps/Hanamura_link.png" width="30px" heigth="30px" alt="Hanamura">Hanamura</a></li>
+		            <li><a href="volskaya.html"><img id="logotipo" src="img/navbar_maps/Volskaya_Industries_link.png" width="30px" heigth="30px" alt="Volskaya">Indústrias Volskaya</a></li>
+                </ul>
+              </li>
+
+	            <li class="dropdown-submenu">
+	            <!-- Criação do  submenu contendo mapas de Escolta menu Mapas na navbar -->	
+                <a tabindex="-1"><b>Escolta</b></a>
+                <ul class="dropdown-menu">
+	                <li><a href="gibraltar.html"><img id="logotipo" src="img/navbar_maps/Watchpoint-_Gibraltar_link.png" width="30px" heigth="30px" alt="Gibraltar">Observatório: Gibraltar</a></li>
+	            	<li><a href="dorado.html"><img id="logotipo" src="img/navbar_maps/Dorado_link.png" width="30px" heigth="30px" alt="Dorado">Dorado</a></li>
+	           		<li><a href="route66.html"><img id="logotipo" src="img/navbar_maps/Route_66_link.png" width="30px" heigth="30px" alt="Route66">Rota 66</a></li>
+                </ul>
+              </li>
+
+	            <li class="dropdown-submenu">
+	            <!-- Criação do  submenu contendo mapas de Escolta menu Mapas na navbar -->	
+                <a tabindex="-1"><b>Controle</b></a>
+                <ul class="dropdown-menu">
+		             <li><a href="lijiang.html"><img id="logotipo" src="img/navbar_maps/Lijiang_Tower_link.png" width="30px" heigth="30px" alt="Lijiang">Torre Lijiang</a></li>
+		            <li><a href="ilios.html"><img id="logotipo" src="img/navbar_maps/Ilios_link.png" width="30px" heigth="30px" alt="Ilios">Ilios</a></li>
+		            <li><a href="nepal.html"><img id="logotipo" src="img/navbar_maps/Nepal_link.png" width="30px" heigth="30px" alt="Nepal">Nepal</a></li>
+		            <li><a href="oasis.html"><img id="logotipo" src="img/navbar_maps/Oasis_link.png" width="30px" heigth="30px" alt="Oasis">Oásis</a></li>
+                </ul>
+              </li>
+
+	            <li class="dropdown-submenu">
+	            <!-- Criação do  submenu contendo mapas Hibridos menu Mapas na navbar -->	
+                <a tabindex="-1"><b>Híbrido</b></a>
+                <ul class="dropdown-menu">
+	                <li><a href="hollywood.html"><img id="logotipo" src="img/navbar_maps/Hollywood_link.png" width="30px" heigth="30px" alt="Hollywood">Hollywood</a></li>
+	            	<li><a href="kingsrow.html"><img id="logotipo" src="img/navbar_maps/King's_Row_link.png" width="30px" heigth="30px" alt="King's Row">King's Row</a></li>
+	            	<li><a href="numbani.html"><img id="logotipo" src="img/navbar_maps/Numbani_link.png" width="30px" heigth="30px" alt="Numbani">Numbani</a></li>
+	            	<li><a href="eichenwalde.html"><img id="logotipo" src="img/navbar_maps/Eichenwalde_link.png" width="30px" heigth="30px" alt="Eichenwalde">Eichenwalde</a></li>
+                </ul>
+              </li>
+	         </ul>
+	        </li>
+
+	        <li class="dropdown">
+	        <!-- Criação do menu Eventos na navbar -->
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="false">Eventos<span class="caret"></span></a>
+	          	<ul class="dropdown-menu">
+	                <li><a href="summergames.html"><img id="logotipo" src="img/Spray_Summer_Games_2016.png" width="30px" heigth="30px" alt="JogosdeVerao">Jogos de Verão</a></li>
+	            	<li><a href="halloweenterror.html"><img id="logotipo" src="img/Spray_Halloween_Terror.png" width="30px" heigth="30px" alt="TerrordeHalloween">Terror de Halloween</a></li>
+	            	<li><a href="winterwonderland.html"><img id="logotipo" src="img/Spray_Winter_Wonderland.png" width="30px" heigth="30px" alt="ParaisoCongelado">Paraíso Congelado</a></li>
+	            	<li><a href="yearoftherooster.html"><img id="logotipo" src="img/Spray_Year_of_the_Rooster.png" width="30px" heigth="30px" alt="Galo">Ano do Galo</a></li>
+                	<li><a href="insurgence.html">Insurreição</a></li> 
+              	</ul>
+            </li>
+	    </ul>
+	      
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+    </nav>
+    <div class="col-sm-9">
+		
+					Outrora combatente na linha de frente na devastadora Crise Ômnica, esta curiosa unidade Bastion agora explora o mundo, fascinada pela natureza, porém cautelosa com uma humanidade temível.<br><br>
+
+					Originalmente criadas para propósitos de manutenção da paz, as unidades robóticas Bastion possuíam a habilidade única de se reconfigurar rapidamente em um modo de canhão de ataque. Porém, durante a Crise Ômnica, elas foram postas contra seus criadores humanos, dando volume ao exército rebelde de ômnicos. Após a resolução da crise, quase todas elas foram destruídas ou desmontadas. Até hoje, as unidades Bastion ainda simbolizam os horrores do conflito.<br><br>
+					
+					Uma unidade Bastion singular, altamente danificada nas batalhas finais da guerra, ficou esquecida por mais de uma década. Ela esteve adormecida, exposta aos elementos e enferrujando enquanto a natureza lentamente a reclamava. Coberto por cipós e raízes, e servindo de ninho para pequenos animais, o robô permaneceu inerte, aparentemente desapercebido da passagem do tempo. Isso até um dia fatídico, quando se reativou inesperadamente. Com sua programação de combate perdida, ele demonstrara curiosidade intensa sobre o mundo natural e seus habitantes. <br><br>
+					Esta inquisitiva unidade Bastion saiu à explorar seus arredores, em busca de seus propósitos em um planeta devastado pela guerra.<br><br>
+					
+					Apesar de "Bastion" parecer gentil — ou até inofensivo, por vezes — sua programação de combate central assume o controle quando a unidade sente perigo, utilizando seu arsenal completo para eliminar qualquer coisa que perceba como ameaça. Isso gerou situações de conflito com os poucos humanos que encontrou, levando-o a evitar áreas povoadas, favorecendo as regiões selvagens e inexploradas do mundo.
+
+  </div>  		
+    	<table id="heroInfo-Defense" class="col-sm-3">
+			<thead>
+				<tr>
+					<td colspan="2" align="center">
+						<b>Bastion</b>
+					</td>
+
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+						<img id="logotipo" src="img/hero_pics/Bastion/Bastion-portrait.jpg" width="150px" heigth="150px" alt="Bastion">
+					</td>
+
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<b>Nome Completo</b>
+					</td>
+					<td>
+						Autômato de Cerco E54 dos Laboratórios SST
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Idade</b>
+					</td>
+					<td>
+						30 anos
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Função</b>
+					</td>
+					<td>
+						<img id="logotipo" src="img/DefenseIcon.png" width="20px" heigth="20px" alt="Defensivo"> Defensivo
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Afiliações</b>
+					</td>
+					<td>
+						Nenhuma
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Ocupação</b>
+					</td>
+					<td>
+						Autômato de batalha
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Base de Operações</b>
+					</td>
+					<td>
+						Desconhecida
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Relacionamentos</b>
+					</td>
+					<td>
+						Desconhecido
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+
+	<div class="col-sm-12">
+	    <h2 align="center">Cosméticos</h2>
+	    <table align="center" id="skins" class="table">
+	    	<tr>
+	    		<td colspan="5">
+	    			Comum (Gratuito)
+	    		</td>   
+	    	</tr>
+	    	<tr>
+	    		<td colspan="5">
+	    			<img id="logotipo" src="img/hero_pics/Bastion/Bastion_Skin_Classic.jpg" width="150px" heigth="150px" alt="Bastion-Classic-Skin"><br>Clássico
+	    		</td> 		
+	    	</tr>
+	    	<tr>
+	    		<td colspan="5">
+	    			Raro - 75 <img id="logotipo" src="img/Currency.png" width="20px" heigth="20px" alt="Currency">
+	    		</td>  
+	    	</tr>
+	    	<tr>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/Bastion/Bastion_Skin_Dawn.jpg" width="150px" heigth="150px" alt="Bastion-Dawn-Skin"><br>Dawn		
+	    		</td>  
+	    		 <td>
+	    			<img id="logotipo" src="img/hero_pics/Bastion/Bastion_Skin_Meadow.jpg" width="150px" heigth="150px" alt="Bastion-Meadow-Skin"><br>Meadow
+	    		</td>  
+	    		<td></td>
+	    		<td>
+					<img id="logotipo" src="img/hero_pics/Bastion/Bastion_Skin_Sky.jpg" width="150px" heigth="150px" alt="Bastion-Sky-Skin"><br>Sky
+	    		</td>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/Bastion/Bastion_Skin_Soot.jpg" width="150px" heigth="150px" alt="Bastion-Soot-Skin"><br>Soot
+	    		</td> 		
+	    	</tr>  
+	    	 <tr>
+	    		<td colspan="5">
+	    			Épico - 250 <img id="logotipo" src="img/Currency.png" width="20px" heigth="20px" alt="Currency">
+	    		</td>  
+	    	</tr>
+	    	<tr>
+	    		<td></td>  
+	    		 <td>
+	    			<img id="logotipo" src="img/hero_pics/Bastion/Bastion_Skin_Defense_Matrix.jpg" width="150px" heigth="150px" alt="Bastion-Defense_Matrix-Skin"><br>Defense Matrix
+	    		</td>  
+	    		<td></td>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/Bastion/Bastion_Skin_Omnic_Crisis.jpg" width="150px" heigth="150px" alt="Bastion-Omnic-Crisis-Skin"><br>Omnic Crisis
+	    		</td> 
+	    		<td></td> 		
+	    	</tr>  
+	    	<tr>
+	    		<td colspan="5">
+	    			Épico (Terror de Halloween) - 750 <img id="logotipo" src="img/Currency.png" width="20px" heigth="20px" alt="Currency">
+	    		</td>   
+	    	</tr>
+	    	<tr>
+	    		<td colspan="5">
+	    			<img id="logotipo" src="img/hero_pics/Bastion/HalloweenTerror_Bastion_Skin_Tombstone.jpg" width="150px" heigth="150px" alt="Bastion-Tombstone-Skin"><br>Tombstone
+	    		</td> 
+	    	</tr>
+	    	<tr>
+	    		<td colspan="5">
+	    			Épico (Blizzcon 2016)
+	    		</td>   
+	    	</tr>
+	    	<tr>
+	    		<td colspan="5">
+	    			<img id="logotipo" src="img/hero_pics/Bastion/Bastion_Skin_BlizzCon_2016.jpg" width="150px" heigth="150px" alt="Bastion-BlizzCon-2016-Skin"><br>BlizzCon 2016
+	    		</td> 
+	    	</tr>
+	  		<tr>
+	    		<td colspan="5">
+	    			Épico (Ano do Galo) - 750 <img id="logotipo" src="img/Currency.png" width="20px" heigth="20px" alt="Currency">
+	    		</td>   
+	    	</tr>
+	    	<tr>
+	    		<td colspan="5">
+	    			<img id="logotipo" src="img/hero_pics/Bastion/Bastion_Skin_Rooster.jpg" width="150px" heigth="150px" alt="Bastion-Rooster-Skin"><br>Rooster
+	    		</td> 
+	    	</tr>
+	    	<tr>
+	    		<td colspan="5">
+	    			Épico (Insurreição) - 750 <img id="logotipo" src="img/Currency.png" width="20px" heigth="20px" alt="Currency">
+	    		</td>   
+	    	</tr>
+	    	<tr>
+	    		<td colspan="5">
+	    			<img id="logotipo" src="img/hero_pics/Bastion/Bastion_Skin_Null_Sector.jpg" width="150px" heigth="150px" alt="Bastion-Null-Sector-Skin"><br>Null Sector
+	    		</td> 
+	    	</tr>
+	    	<tr>
+	    		<td colspan="5">
+	    			Lendário - 1000 <img id="logotipo" src="img/Currency.png" width="20px" heigth="20px" alt="Currency">
+	    		</td>   
+	    	</tr>
+	    	<tr>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/Bastion/Bastion_Skin_Antique.jpg" width="150px" heigth="150px" alt="Bastion-Antique-Skin"><br>Antique
+	    		</td>  
+	    		 <td>
+	    			<img id="logotipo" src="img/hero_pics/Bastion/Bastion_Skin_Woodbot.jpg" width="150px" heigth="150px" alt="Bastion-Woodbot-Skin"><br>Woodbot
+	    		</td>  
+	    		<td></td>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/Bastion/Bastion_Skin_Gearbot.jpg" width="150px" heigth="150px" alt="Bastion-Gearbot-Skin"><br>Gearbot
+	    		</td>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/Bastion/Bastion_Skin_Steambot.jpg" width="150px" heigth="150px" alt="Bastion-Steambot-Skin"><br>Steambot
+	    		</td> 		
+	    	</tr>
+	    	<tr>
+	    		<td colspan="5">
+	    			Lendário (Overwatch Origins)
+	    		</td>   
+	    	</tr>
+	    	<tr>
+	    		<td colspan="5">
+	    			<img id="logotipo" src="img/hero_pics/Bastion/Bastion_Skin_Overgrown.jpg" width="150px" heigth="150px" alt="Bastion-Overgrown-Skin"><br>Overgrown
+	    		</td> 
+	    	</tr>
+	    </table>
+   	</div>	
+   	<br><br><br>
+   	<div id="direitos" class="col-sm-12"><h6>Copyright © Overpwn - Todos os direitos reservados</h6></div>
+	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/overpwn.js"></script>
+</body>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OverPwn - Orisa</title>
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/overpwn.css">
+	<meta charset="utf-8">
+</head>
+<body onload="alternarCorTabela()">
+		
+<!-- Criação da navbar -->
+
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	   <!-- Criação do icone na navbar -->
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="index.html"><img id="logotipo" src="img/overwatch-logo.png" width="25px" heigth="25px" alt="Logotipo"></a>
+	    </div>
+
+	    <!-- Criação do link Home na navbar -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav" id="navbarItems">
+	        <li><a href="index.html">Home</a></li>
+	        	        <li class="dropdown">
+	         <!-- Criação do menu Herois na navbar -->
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="false">Heróis<span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <!-- Criação do  submenu contendo herois Ofensivos dentro do menu Herois na navbar -->
+	            <li class="dropdown-submenu">
+                <a tabindex="-1"><img id="logotipo" src="img/OffenseIcon.png" width="20px" heigth="20px" alt="Ofensivo"><b>Ofensivo</b></a>
+                <ul class="dropdown-menu">
+	                <li><a href="genji.html"><img id="logotipo" src="img/navbar_heroes/Genji_link.png" width="30px" heigth="30px" alt="Genji">Genji</a></li>
+		            <li><a href="mccree.html"><img id="logotipo" src="img/navbar_heroes/McCree_link.png" width="30px" heigth="30px" alt="McCree">McCree</a></li>
+		            <li><a href="pharah.html"><img id="logotipo" src="img/navbar_heroes/Pharah_link.png" width="30px" heigth="30px" alt="Pharah">Pharah</a></li>
+		            <li><a href="reaper.html"><img id="logotipo" src="img/navbar_heroes/Reaper_link.png" width="30px" heigth="30px" alt="Reaper">Reaper</a></li>
+		            <li><a href="soldier76.html"><img id="logotipo" src="img/navbar_heroes/Soldier_76_link.png" width="30px" heigth="30px" alt="Soldier 76">Soldado 76</a></li>
+		            <li><a href="sombra.html"><img id="logotipo" src="img/navbar_heroes/Sombra_link.png" width="30px" heigth="30px" alt="Sombra">Sombra</a></li>
+		            <li><a href="tracer.html"><img id="logotipo" src="img/navbar_heroes/Tracer_link.png" width="30px" heigth="30px" alt="Tracer">Tracer</a></li>
+                </ul>
+              </li>
+              	<!-- Criação do  submenu contendo herois Defensivos dentro do menu Herois na navbar -->
+	            <li class="dropdown-submenu">
+                <a tabindex="-1"><img id="logotipo" src="img/DefenseIcon.png" width="20px" heigth="20px" alt="Defensivo"><b>Defensivo</b></a>
+                <ul class="dropdown-menu">
+	                <li><a href="bastion.html"><img id="logotipo" src="img/navbar_heroes/Bastion_link.png" width="30px" heigth="30px" alt="Bastion">Bastion</a></li>
+		            <li><a href="hanzo.html"><img id="logotipo" src="img/navbar_heroes/Hanzo_link.png" width="30px" heigth="30px" alt="Hanzo">Hanzo</a></li>
+		            <li><a href="junkrat.html"><img id="logotipo" src="img/navbar_heroes/Junkrat_link.png" width="30px" heigth="30px" alt="Junkrat">Junkrat</a></li>
+		            <li><a href="mei.html"><img id="logotipo" src="img/navbar_heroes/Mei_link.png" width="30px" heigth="30px" alt="Mei">Mei</a></li>
+		            <li><a href="torbjorn.html"><img id="logotipo" src="img/navbar_heroes/Torbjörn_link.png" width="30px" heigth="30px" alt="Torbjörn">Torbjörn</a></li>
+		            <li><a href="widowmaker.html"><img id="logotipo" src="img/navbar_heroes/Widowmaker_link.png" width="30px" heigth="30px" alt="Widowmaker">Widowmaker</a></li>
+                </ul>
+              </li>
+              	<!-- Criação do  submenu contendo herois Tanques dentro do menu Herois na navbar -->
+	            <li class="dropdown-submenu">
+                <a tabindex="-1"><img id="logotipo" src="img/TankIcon.png" width="20px" heigth="20px" alt="Tanque"><b>Tanque</b></a>
+                <ul class="dropdown-menu">
+		            <li><a href="dva.html"><img id="logotipo" src="img/navbar_heroes/D.Va_link.png" width="30px" heigth="30px" alt="D.Va">D.Va</a></li>
+		            <li><a href="#"><img id="logotipo" src="img/navbar_heroes/Orisa_link.png" width="30px" heigth="30px" alt="Orisa">Orisa</a></li>
+		            <li><a href="reinhardt.html"><img id="logotipo" src="img/navbar_heroes/Reinhardt_link.png" width="30px" heigth="30px" alt="Reinhardt">Reinhardt</a></li>
+		            <li><a href="roadhog.html"><img id="logotipo" src="img/navbar_heroes/Roadhog_link.png" width="30px" heigth="30px" alt="Roadhog">Roadhog</a></li>
+		            <li><a href="winston.html"><img id="logotipo" src="img/navbar_heroes/Winston_link.png" width="30px" heigth="30px" alt="Winston">Winston</a></li>
+		            <li><a href="zarya.html"><img id="logotipo" src="img/navbar_heroes/Zarya_link.png" width="30px" heigth="30px" alt="Zarya">Zarya</a></li>
+                </ul>
+              </li>
+              	<!-- Criação do  submenu contendo herois Suportes dentro do menu Herois na navbar -->
+	            <li class="dropdown-submenu">
+                <a tabindex="-1"><img id="logotipo" src="img/SupportIcon.png" width="20px" heigth="20px" alt="Ofensivo"><b>Suporte</b></a>
+                <ul class="dropdown-menu">
+	                <li><a href="ana.html"><img id="logotipo" src="img/navbar_heroes/Ana_link.png" width="30px" heigth="30px" alt="Ana">Ana</a></li>
+		            <li><a href="lucio.html"><img id="logotipo" src="img/navbar_heroes/Lúcio_link.png" width="30px" heigth="30px" alt="Lúcio">Lúcio</a></li>
+		            <li><a href="mercy.html"><img id="logotipo" src="img/navbar_heroes/Mercy_link.png" width="30px" heigth="30px" alt="Mercy">Mercy</a></li>
+		            <li><a href="symmetra.html"><img id="logotipo" src="img/navbar_heroes/Symmetra_link.png" width="30px" heigth="30px" alt="Symmetra">Symmetra</a></li>
+		            <li><a href="zenyatta.html"><img id="logotipo" src="img/navbar_heroes/Zenyatta_link.png" width="30px" heigth="30px" alt="Zenyatta">Zenyatta</a></li>
+                </ul>
+              </li>
+	        </ul>
+	       </li>
+	        <li class="dropdown">
+	          <!-- Criação do menu Mapas na navbar -->
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="false">Mapas<span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li class="dropdown-submenu">
+	            <!-- Criação do  submenu contendo mapas de Ataque menu Mapas na navbar -->	
+                <a tabindex="-1"><b>Ataque</b></a>
+                <ul class="dropdown-menu">
+	                <li><a href="anubis.html"><img id="logotipo" src="img/navbar_maps/Temple_of_Anubis_link.png" width="30px" heigth="30px" alt="Anubis">Templo de Anúbis</a></li>
+		            <li><a href="hanamura.html"><img id="logotipo" src="img/navbar_maps/Hanamura_link.png" width="30px" heigth="30px" alt="Hanamura">Hanamura</a></li>
+		            <li><a href="volskaya.html"><img id="logotipo" src="img/navbar_maps/Volskaya_Industries_link.png" width="30px" heigth="30px" alt="Volskaya">Indústrias Volskaya</a></li>
+                </ul>
+              </li>
+
+	            <li class="dropdown-submenu">
+	            <!-- Criação do  submenu contendo mapas de Escolta menu Mapas na navbar -->	
+                <a tabindex="-1"><b>Escolta</b></a>
+                <ul class="dropdown-menu">
+	                <li><a href="gibraltar.html"><img id="logotipo" src="img/navbar_maps/Watchpoint-_Gibraltar_link.png" width="30px" heigth="30px" alt="Gibraltar">Observatório: Gibraltar</a></li>
+	            	<li><a href="dorado.html"><img id="logotipo" src="img/navbar_maps/Dorado_link.png" width="30px" heigth="30px" alt="Dorado">Dorado</a></li>
+	           		<li><a href="route66.html"><img id="logotipo" src="img/navbar_maps/Route_66_link.png" width="30px" heigth="30px" alt="Route66">Rota 66</a></li>
+                </ul>
+              </li>
+
+	            <li class="dropdown-submenu">
+	            <!-- Criação do  submenu contendo mapas de Escolta menu Mapas na navbar -->	
+                <a tabindex="-1"><b>Controle</b></a>
+                <ul class="dropdown-menu">
+		             <li><a href="lijiang.html"><img id="logotipo" src="img/navbar_maps/Lijiang_Tower_link.png" width="30px" heigth="30px" alt="Lijiang">Torre Lijiang</a></li>
+		            <li><a href="ilios.html"><img id="logotipo" src="img/navbar_maps/Ilios_link.png" width="30px" heigth="30px" alt="Ilios">Ilios</a></li>
+		            <li><a href="nepal.html"><img id="logotipo" src="img/navbar_maps/Nepal_link.png" width="30px" heigth="30px" alt="Nepal">Nepal</a></li>
+		            <li><a href="oasis.html"><img id="logotipo" src="img/navbar_maps/Oasis_link.png" width="30px" heigth="30px" alt="Oasis">Oásis</a></li>
+                </ul>
+              </li>
+
+	            <li class="dropdown-submenu">
+	            <!-- Criação do  submenu contendo mapas Hibridos menu Mapas na navbar -->	
+                <a tabindex="-1"><b>Híbrido</b></a>
+                <ul class="dropdown-menu">
+	                <li><a href="hollywood.html"><img id="logotipo" src="img/navbar_maps/Hollywood_link.png" width="30px" heigth="30px" alt="Hollywood">Hollywood</a></li>
+	            	<li><a href="kingsrow.html"><img id="logotipo" src="img/navbar_maps/King's_Row_link.png" width="30px" heigth="30px" alt="King's Row">King's Row</a></li>
+	            	<li><a href="numbani.html"><img id="logotipo" src="img/navbar_maps/Numbani_link.png" width="30px" heigth="30px" alt="Numbani">Numbani</a></li>
+	            	<li><a href="eichenwalde.html"><img id="logotipo" src="img/navbar_maps/Eichenwalde_link.png" width="30px" heigth="30px" alt="Eichenwalde">Eichenwalde</a></li>
+                </ul>
+              </li>
+	         </ul>
+	        </li>
+
+	        <li class="dropdown">
+	        <!-- Criação do menu Eventos na navbar -->
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="false">Eventos<span class="caret"></span></a>
+	          	<ul class="dropdown-menu">
+	                <li><a href="summergames.html"><img id="logotipo" src="img/Spray_Summer_Games_2016.png" width="30px" heigth="30px" alt="JogosdeVerao">Jogos de Verão</a></li>
+	            	<li><a href="halloweenterror.html"><img id="logotipo" src="img/Spray_Halloween_Terror.png" width="30px" heigth="30px" alt="TerrordeHalloween">Terror de Halloween</a></li>
+	            	<li><a href="winterwonderland.html"><img id="logotipo" src="img/Spray_Winter_Wonderland.png" width="30px" heigth="30px" alt="ParaisoCongelado">Paraíso Congelado</a></li>
+	            	<li><a href="yearoftherooster.html"><img id="logotipo" src="img/Spray_Year_of_the_Rooster.png" width="30px" heigth="30px" alt="Galo">Ano do Galo</a></li>
+                	<li><a href="insurgence.html">Insurreição</a></li> 
+              	</ul>
+            </li>
+	    </ul>
+	      
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+    </nav>
+    <i align="center">"Sua segurança é meu dever primário."</i>
+    <div class="col-sm-9">
+		
+					Construída a partir das peças de um OR15, os robôs de defesa de curta duração de Numbani, Orisa é a mais nova protetora da cidade, mas ela ainda tem muito o que aprender.<br><br>
+
+					Colocada em funcionamento antes da Crise Ômnica, a linha OR14 "Idina" de robôs de segurança foi construída no enorme ômnium de produção nigeriano. Após a guerra, eles saíram de linha, juntamente com vários outros modelos usados durante a crise. Vinte anos depois, Numbani reativou e reiniciou o programa OR14 para proteger a cidade contra ameaças externas. Esses novos OR15 foram implantados por um breve período antes de serem destruídos em um ataque de Doomfist.<br><br>
+					
+					Após o ataque, o programa foi desmontado e o governo vendeu o estoque restante de OR15s. Algumas peças foram adquiridas por Efi Oladele, uma garota gênio de apenas 11 anos de idade cujas precoces realizações na área de robótica já haviam lhe rendido um "prêmio de gênio" da Fundação Adawe.<br><br>
+					
+					Com a aprovação de seus pais extremamente compreensivos e mente aberta, Efi gastou a maior parte do seu prêmio na compra de um robô OR15 desativado. Ela acreditava que Numbani precisava de um protetor e que um OR15 aprimorado seria capaz de fazer isso. Efi consertou e reconfigurou o robô e instalou um núcleo de personalidade que ela mesma projetou.<br><br>
+					
+					Ela chamou a mais nova heroína de Numbani de Orisa.<br><br>
+					
+					Orisa já mostrou que pode ser útil para a cidade, mas ainda se esforça para encontrar seus protocolos ideais. A falta de experiência da ômnica às vezes faz dela um estorvo, mas, felizmente, graças à disposição de Efi em fazer as modificações necessárias e à inteligência artificial adaptativa de Orisa, tanto robô quanto criadora sempre conseguiram ajustar as coisas.<br><br>
+					
+					Neste início de carreira como guardiã, Orisa tem muito o que aprender sobre suas próprias funcionalidades e sobre o mundo. Mas enquanto ela for guiada pelo ilimitado otimismo de Efi e por seu crescente senso de honra e dever, Orisa estará pronta para proteger sua criadora e Numbani a qualquer custo.
+  </div>  		
+    	<table id="heroInfo-Tank" class="col-sm-3">
+			<thead>
+				<tr>
+					<td colspan="2" align="center">
+						<b>Orisa</b>
+					</td>
+
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+						<img id="logotipo" src="img/hero_pics/Orisa/Orisa-portrait.jpg" width="150px" heigth="150px" alt="Orisa">
+					</td>
+
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<b>Nome Completo</b>
+					</td>
+					<td>
+						Orisa
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Idade</b>
+					</td>
+					<td>
+						1 mês
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Função</b>
+					</td>
+					<td>
+						<img id="logotipo" src="img/TankIcon.png" width="20px" heigth="20px" alt="Tanque"> Tanque
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Afiliações</b>
+					</td>
+					<td>
+						Nenhuma
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Ocupação</b>
+					</td>
+					<td>
+						Guardiã Robô
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Base de Operações</b>
+					</td>
+					<td>
+						Numbani
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Relacionamentos</b>
+					</td>
+					<td>
+						Efi (criadora)
+					</td>
+				</tr>
+		</table>
+
+
+	<div class="col-sm-12">
+	    <h2 align="center">Cosméticos</h2>
+	    <table align="center" id="skins" class="table">
+	    	<tr>
+	    		<td colspan="5">
+	    			Comum (Gratuito)
+	    		</td>   
+	    	</tr>
+	    	<tr>
+	    		<td colspan="5">
+	    			<img id="logotipo" src="img/hero_pics/Orisa/Orisa_Skin_Classic.jpg" width="150px" heigth="150px" alt="Orisa-Classic-Skin"><br>Clássico
+	    		</td> 		
+	    	</tr>
+	    	<tr>
+	    		<td colspan="5">
+	    			Raro - 75 <img id="logotipo" src="img/Currency.png" width="20px" heigth="20px" alt="Currency">
+	    		</td>  
+	    	</tr>
+	    	<tr>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/Orisa/Orisa_Skin_Blueberry.jpg" width="150px" heigth="150px" alt="Orisa-Blueberry-Skin"><br>Blueberry	
+	    		</td>  
+	    		 <td>
+	    			<img id="logotipo" src="img/hero_pics/Orisa/Orisa_Skin_Lemon_Lime.jpg" width="150px" heigth="150px" alt="Orisa-Lemon-Lime-Skin"><br>Lemon-Lime
+	    		</td>  
+	    		<td></td>
+	    		<td>
+					<img id="logotipo" src="img/hero_pics/Orisa/Orisa_Skin_Tangerine.jpg" width="150px" heigth="150px" alt="Orisa-Tangerine-Skin"><br>Tangerine
+	    		</td>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/Orisa/Orisa_Skin_Watermelon.jpg" width="150px" heigth="150px" alt="Orisa-Watermelon-Skin"><br>Watermelon
+	    		</td> 		
+	    	</tr>  
+	    	 <tr>
+	    		<td colspan="5">
+	    			Épico - 250 <img id="logotipo" src="img/Currency.png" width="20px" heigth="20px" alt="Currency">
+	    		</td>  
+	    	</tr>
+	    	<tr>
+	    		<td></td>  
+	    		 <td>
+	    			<img id="logotipo" src="img/hero_pics/Orisa/Orisa_Skin_Carbon_Fiber.jpg" width="150px" heigth="150px" alt="Orisa-Carbon-Fiber-Skin"><br>Carbon Fiber
+	    		</td>  
+	    		<td></td>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/Orisa/Orisa_Skin_White_Rabbit.jpg" width="150px" heigth="150px" alt="Orisa-White-Rabbit-Skin"><br>White Rabbit
+	    		</td> 
+	    	</tr>
+	    		<tr>
+	    		<td colspan="5">
+	    			Lendário (Jogos de Verão)
+	    		</td>   
+	    	</tr>
+	    	<tr>
+	    		<td colspan="5">
+	    			<img id="logotipo" src="img/hero_pics/Orisa/Summer2016_D.Va_Skin_Taegeukgi.jpg" width="150px" heigth="150px" alt="Orisa-Taegeukgi-Skin"><br>Taegeukgi
+	    		</td> 
+	    	</tr>		  
+	    	<tr>
+	    		<td colspan="5">
+	    			Lendário - 1000 <img id="logotipo" src="img/Currency.png" width="20px" heigth="20px" alt="Currency">
+	    		</td>   
+	    	</tr>
+	    	<tr>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/Orisa/Orisa_Skin_Junker.jpg" width="150px" heigth="150px" alt="Orisa-Junker-Skin"><br>Junker
+	    		</td>  
+	    		 <td>
+	    			<img id="logotipo" src="img/hero_pics/Orisa/Orisa_Skin_Scavenger.jpg" width="150px" heigth="150px" alt="Orisa-Scavenger-Skin"><br>Scavenger
+	    		</td>  
+	    		<td></td>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/Orisa/Orisa_Skin_B_Va.jpg" width="150px" heigth="150px" alt="Orisa-BVa-Skin"><br>B.Va
+	    		</td>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/Orisa/Orisa_Skin_Junebug.jpg" width="150px" heigth="150px" alt="Orisa-Junebug-Skin"><br>Junebug
+	    		</td> 		
+	    	</tr>
+	    	<tr>
+	    		<td colspan="5">
+	    			Lendário (Ano do Galo) - 3000 <img id="logotipo" src="img/Currency.png" width="20px" heigth="20px" alt="Currency">
+	    		</td>   
+	    	</tr>
+	    	<tr>
+	    		<td colspan="5">
+	    			<img id="logotipo" src="img/hero_pics/Orisa/Orisa_skin_Palanquin.jpg" width="150px" heigth="150px" alt="Orisa-Palanquin-Skin"><br>Palanquin
+	    		</td> 
+	    	</tr>
+	    	<tr>
+	    		<td colspan="5">
+	    			Lendário (Heroes of the Storm)
+	    		</td>   
+	    	</tr>
+	    	<tr>
+	    		<td colspan="5">
+	    			<img id="logotipo" src="img/hero_pics/Orisa/D.Va_Skin_Police_Officer.jpg" width="150px" heigth="150px" alt="Orisa-Police-Officer-Skin"><br>Police Officer
+	    		</td> 
+	    	</tr>
+	    </table>
+   	</div>	
+   	<br><br><br>
+   	<div id="direitos" class="col-sm-12"><h6>Copyright © Overpwn - Todos os direitos reservados</h6></div>
+	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/overpwn.js"></script>
+</body>
+</html>

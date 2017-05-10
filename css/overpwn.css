@@ -39,6 +39,26 @@ thead{
 	src: url("../fonts/Open_Sans/OpenSans-Light.ttf");
 }
 
+#heroInfo-Defense {
+    font-size: 15px;
+    width: 300px;
+    margin: auto;
+    margin-right: 25px;
+    border: solid purple;
+    font-family: 'OpenSans-Light';
+    src: url("../fonts/Open_Sans/OpenSans-Light.ttf");
+}
+
+#heroInfo-Tank {
+    font-size: 15px;
+    width: 300px;
+    margin: auto;
+    margin-right: 25px;
+    border: solid blue;
+    font-family: 'OpenSans-Light';
+    src: url("../fonts/Open_Sans/OpenSans-Light.ttf");
+}
+
 #historia{
 	text-align: center;
 }

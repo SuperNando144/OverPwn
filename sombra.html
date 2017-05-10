@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OverPwn - Sombra</title>
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/overpwn.css">
+	<meta charset="utf-8">
+</head>
+<body onload="alternarCorTabela()">
+		
+<!-- Criação da navbar -->
+
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	   <!-- Criação do icone na navbar -->
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="index.html"><img id="logotipo" src="img/overwatch-logo.png" width="25px" heigth="25px" alt="Logotipo"></a>
+	    </div>
+
+	    <!-- Criação do link Home na navbar -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav" id="navbarItems">
+	        <li><a href="index.html">Home</a></li>
+	        	        <li class="dropdown">
+	         <!-- Criação do menu Herois na navbar -->
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="false">Heróis<span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <!-- Criação do  submenu contendo herois Ofensivos dentro do menu Herois na navbar -->
+	            <li class="dropdown-submenu">
+                <a tabindex="-1"><img id="logotipo" src="img/OffenseIcon.png" width="20px" heigth="20px" alt="Ofensivo"><b>Ofensivo</b></a>
+                <ul class="dropdown-menu">
+	                <li><a href="genji.html"><img id="logotipo" src="img/navbar_heroes/Genji_link.png" width="30px" heigth="30px" alt="Genji">Genji</a></li>
+		            <li><a href="mccree.html"><img id="logotipo" src="img/navbar_heroes/McCree_link.png" width="30px" heigth="30px" alt="McCree">McCree</a></li>
+		            <li><a href="pharah.html"><img id="logotipo" src="img/navbar_heroes/Pharah_link.png" width="30px" heigth="30px" alt="Pharah">Pharah</a></li>
+		            <li><a href="reaper.html"><img id="logotipo" src="img/navbar_heroes/Reaper_link.png" width="30px" heigth="30px" alt="Reaper">Reaper</a></li>
+		            <li><a href="soldier76.html"><img id="logotipo" src="img/navbar_heroes/Soldier_76_link.png" width="30px" heigth="30px" alt="Soldier 76">Soldado 76</a></li>
+		            <li><a href="#"><img id="logotipo" src="img/navbar_heroes/Sombra_link.png" width="30px" heigth="30px" alt="Sombra">Sombra</a></li>
+		            <li><a href="tracer.html"><img id="logotipo" src="img/navbar_heroes/Tracer_link.png" width="30px" heigth="30px" alt="Tracer">Tracer</a></li>
+                </ul>
+              </li>
+              	<!-- Criação do  submenu contendo herois Defensivos dentro do menu Herois na navbar -->
+	            <li class="dropdown-submenu">
+                <a tabindex="-1"><img id="logotipo" src="img/DefenseIcon.png" width="20px" heigth="20px" alt="Defensivo"><b>Defensivo</b></a>
+                <ul class="dropdown-menu">
+	                <li><a href="bastion.html"><img id="logotipo" src="img/navbar_heroes/Bastion_link.png" width="30px" heigth="30px" alt="Bastion">Bastion</a></li>
+		            <li><a href="hanzo.html"><img id="logotipo" src="img/navbar_heroes/Hanzo_link.png" width="30px" heigth="30px" alt="Hanzo">Hanzo</a></li>
+		            <li><a href="junkrat.html"><img id="logotipo" src="img/navbar_heroes/Junkrat_link.png" width="30px" heigth="30px" alt="Junkrat">Junkrat</a></li>
+		            <li><a href="mei.html"><img id="logotipo" src="img/navbar_heroes/Mei_link.png" width="30px" heigth="30px" alt="Mei">Mei</a></li>
+		            <li><a href="torbjorn.html"><img id="logotipo" src="img/navbar_heroes/Torbjörn_link.png" width="30px" heigth="30px" alt="Torbjörn">Torbjörn</a></li>
+		            <li><a href="widowmaker.html"><img id="logotipo" src="img/navbar_heroes/Widowmaker_link.png" width="30px" heigth="30px" alt="Widowmaker">Widowmaker</a></li>
+                </ul>
+              </li>
+              	<!-- Criação do  submenu contendo herois Tanques dentro do menu Herois na navbar -->
+	            <li class="dropdown-submenu">
+                <a tabindex="-1"><img id="logotipo" src="img/TankIcon.png" width="20px" heigth="20px" alt="Tanque"><b>Tanque</b></a>
+                <ul class="dropdown-menu">
+		            <li><a href="dva.html"><img id="logotipo" src="img/navbar_heroes/D.Va_link.png" width="30px" heigth="30px" alt="D.Va">D.Va</a></li>
+		            <li><a href="orisa.html"><img id="logotipo" src="img/navbar_heroes/Orisa_link.png" width="30px" heigth="30px" alt="Orisa">Orisa</a></li>
+		            <li><a href="reinhardt.html"><img id="logotipo" src="img/navbar_heroes/Reinhardt_link.png" width="30px" heigth="30px" alt="Reinhardt">Reinhardt</a></li>
+		            <li><a href="roadhog.html"><img id="logotipo" src="img/navbar_heroes/Roadhog_link.png" width="30px" heigth="30px" alt="Roadhog">Roadhog</a></li>
+		            <li><a href="winston.html"><img id="logotipo" src="img/navbar_heroes/Winston_link.png" width="30px" heigth="30px" alt="Winston">Winston</a></li>
+		            <li><a href="zarya.html"><img id="logotipo" src="img/navbar_heroes/Zarya_link.png" width="30px" heigth="30px" alt="Zarya">Zarya</a></li>
+                </ul>
+              </li>
+              	<!-- Criação do  submenu contendo herois Suportes dentro do menu Herois na navbar -->
+	            <li class="dropdown-submenu">
+                <a tabindex="-1"><img id="logotipo" src="img/SupportIcon.png" width="20px" heigth="20px" alt="Ofensivo"><b>Suporte</b></a>
+                <ul class="dropdown-menu">
+	                <li><a href="ana.html"><img id="logotipo" src="img/navbar_heroes/Ana_link.png" width="30px" heigth="30px" alt="Ana">Ana</a></li>
+		            <li><a href="lucio.html"><img id="logotipo" src="img/navbar_heroes/Lúcio_link.png" width="30px" heigth="30px" alt="Lúcio">Lúcio</a></li>
+		            <li><a href="mercy.html"><img id="logotipo" src="img/navbar_heroes/Mercy_link.png" width="30px" heigth="30px" alt="Mercy">Mercy</a></li>
+		            <li><a href="symmetra.html"><img id="logotipo" src="img/navbar_heroes/Symmetra_link.png" width="30px" heigth="30px" alt="Symmetra">Symmetra</a></li>
+		            <li><a href="zenyatta.html"><img id="logotipo" src="img/navbar_heroes/Zenyatta_link.png" width="30px" heigth="30px" alt="Zenyatta">Zenyatta</a></li>
+                </ul>
+              </li>
+	        </ul>
+	       </li>
+	        <li class="dropdown">
+	          <!-- Criação do menu Mapas na navbar -->
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="false">Mapas<span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li class="dropdown-submenu">
+	            <!-- Criação do  submenu contendo mapas de Ataque menu Mapas na navbar -->	
+                <a tabindex="-1"><b>Ataque</b></a>
+                <ul class="dropdown-menu">
+	                <li><a href="anubis.html"><img id="logotipo" src="img/navbar_maps/Temple_of_Anubis_link.png" width="30px" heigth="30px" alt="Anubis">Templo de Anúbis</a></li>
+		            <li><a href="hanamura.html"><img id="logotipo" src="img/navbar_maps/Hanamura_link.png" width="30px" heigth="30px" alt="Hanamura">Hanamura</a></li>
+		            <li><a href="volskaya.html"><img id="logotipo" src="img/navbar_maps/Volskaya_Industries_link.png" width="30px" heigth="30px" alt="Volskaya">Indústrias Volskaya</a></li>
+                </ul>
+              </li>
+
+	            <li class="dropdown-submenu">
+	            <!-- Criação do  submenu contendo mapas de Escolta menu Mapas na navbar -->	
+                <a tabindex="-1"><b>Escolta</b></a>
+                <ul class="dropdown-menu">
+	                <li><a href="gibraltar.html"><img id="logotipo" src="img/navbar_maps/Watchpoint-_Gibraltar_link.png" width="30px" heigth="30px" alt="Gibraltar">Observatório: Gibraltar</a></li>
+	            	<li><a href="dorado.html"><img id="logotipo" src="img/navbar_maps/Dorado_link.png" width="30px" heigth="30px" alt="Dorado">Dorado</a></li>
+	           		<li><a href="route66.html"><img id="logotipo" src="img/navbar_maps/Route_66_link.png" width="30px" heigth="30px" alt="Route66">Rota 66</a></li>
+                </ul>
+              </li>
+
+	            <li class="dropdown-submenu">
+	            <!-- Criação do  submenu contendo mapas de Escolta menu Mapas na navbar -->	
+                <a tabindex="-1"><b>Controle</b></a>
+                <ul class="dropdown-menu">
+		             <li><a href="lijiang.html"><img id="logotipo" src="img/navbar_maps/Lijiang_Tower_link.png" width="30px" heigth="30px" alt="Lijiang">Torre Lijiang</a></li>
+		            <li><a href="ilios.html"><img id="logotipo" src="img/navbar_maps/Ilios_link.png" width="30px" heigth="30px" alt="Ilios">Ilios</a></li>
+		            <li><a href="nepal.html"><img id="logotipo" src="img/navbar_maps/Nepal_link.png" width="30px" heigth="30px" alt="Nepal">Nepal</a></li>
+		            <li><a href="oasis.html"><img id="logotipo" src="img/navbar_maps/Oasis_link.png" width="30px" heigth="30px" alt="Oasis">Oásis</a></li>
+                </ul>
+              </li>
+
+	            <li class="dropdown-submenu">
+	            <!-- Criação do  submenu contendo mapas Hibridos menu Mapas na navbar -->	
+                <a tabindex="-1"><b>Híbrido</b></a>
+                <ul class="dropdown-menu">
+	                <li><a href="hollywood.html"><img id="logotipo" src="img/navbar_maps/Hollywood_link.png" width="30px" heigth="30px" alt="Hollywood">Hollywood</a></li>
+	            	<li><a href="kingsrow.html"><img id="logotipo" src="img/navbar_maps/King's_Row_link.png" width="30px" heigth="30px" alt="King's Row">King's Row</a></li>
+	            	<li><a href="numbani.html"><img id="logotipo" src="img/navbar_maps/Numbani_link.png" width="30px" heigth="30px" alt="Numbani">Numbani</a></li>
+	            	<li><a href="eichenwalde.html"><img id="logotipo" src="img/navbar_maps/Eichenwalde_link.png" width="30px" heigth="30px" alt="Eichenwalde">Eichenwalde</a></li>
+                </ul>
+              </li>
+	         </ul>
+	        </li>
+
+	        <li class="dropdown">
+	        <!-- Criação do menu Eventos na navbar -->
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="false">Eventos<span class="caret"></span></a>
+	          	<ul class="dropdown-menu">
+	                <li><a href="summergames.html"><img id="logotipo" src="img/Spray_Summer_Games_2016.png" width="30px" heigth="30px" alt="JogosdeVerao">Jogos de Verão</a></li>
+	            	<li><a href="halloweenterror.html"><img id="logotipo" src="img/Spray_Halloween_Terror.png" width="30px" heigth="30px" alt="TerrordeHalloween">Terror de Halloween</a></li>
+	            	<li><a href="winterwonderland.html"><img id="logotipo" src="img/Spray_Winter_Wonderland.png" width="30px" heigth="30px" alt="ParaisoCongelado">Paraíso Congelado</a></li>
+	            	<li><a href="yearoftherooster.html"><img id="logotipo" src="img/Spray_Year_of_the_Rooster.png" width="30px" heigth="30px" alt="Galo">Ano do Galo</a></li>
+                	<li><a href="insurgence.html">Insurreição</a></li> 
+              	</ul>
+            </li>
+	    </ul>
+	      
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+    </nav>
+    	<i align="center">"Qualquer coisa pode ser hackeada… e qualquer um."</i>
+    <div class="col-sm-9">
+		
+					Uma das hackers mais famosas do mundo, Sombra usa informações para manipular aqueles que estão no poder.<br><br>
+
+					Muito antes de assumir o nome de “Sombra”, ░░░░░░ era uma das milhares de crianças que ficaram órfãs após a Crise Ômnica. Com muita da infraestrutura de seu país destruída, ela sobreviveu utilizando seus dons naturais de computação como hacker.<br><br>
+
+					Depois disso, ░░░░░░ foi acolhida pela gangue mexicana Los Muertos, os ajudando em sua revolução pessoal contra o governo. Los Muertos acreditavam que a reconstrução do México havia favorecido os ricos e mais influentes, deixando para trás os mais necessitados.<br><br>
+
+					Após tantas conquistas, ░░░░░░ estava plenamente confiante de suas habilidades, mas foi pega desprevenida quando esbarrou em uma rede de conspiração global, que também a percebeu. Com sua segurança comprometida, ░░░░░░ foi forçada a excluir todos os rastros de sua existência e se escondeu.<br><br>
+
+					Ela mais tarde ressurgiu como Sombra, melhorada e determinada a descobrir a verdade por trás da conspiração que ela descobriu. Sombra lançou ataques cibernéticos ainda mais audaciosos e conseguiu com suas explorações conquistar muitos admiradores, incluindo a Talon. Ela se juntou à organização e acredita-se que contribuiu para ataques cibernéticos maciços contra corporações com fortes laços governamentais. Essas façanhas incitaram uma revolta popular no México contra a LumériCo e violaram a segurança das Indústrias Volskaya, a indústria russa responsável pela manufatura da defesa anti-ômnica.<br><br>
+
+					Agora, junto a Talon e seus recursos abundantes, Sombra pode focar em seu objetivo real: expor a conspiração e usar este poder para seus objetivos pessoais.<br><br>
+
+  </div>  		
+    	<table id="heroInfo" class="col-sm-3">
+			<thead>
+				<tr>
+					<td colspan="2" align="center">
+						<b>Sombra</b>
+					</td>
+
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+						<img id="logotipo" src="img/hero_pics/Sombra/Sombra-portrait.jpg" width="150px" heigth="150px" alt="Sombra">
+					</td>
+
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<b>Nome Completo</b>
+					</td>
+					<td>
+						░░░░░░
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Idade</b>
+					</td>
+					<td>
+						30 anos
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Função</b>
+					</td>
+					<td>
+						<img id="logotipo" src="img/OffenseIcon.png" width="20px" heigth="20px" alt="Ofensivo"> Ofensivo
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Afiliações</b>
+					</td>
+					<td>
+						Los Muertos (anteriormente)<br>Talon
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Ocupação</b>
+					</td>
+					<td>
+						Hacker
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Base de Operações</b>
+					</td>
+					<td>
+						Dorado, México
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Relacionamentos</b>
+					</td>
+					<td>
+						Desconhecido
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+
+	<div class="col-sm-12">
+	    <h2 align="center">Cosméticos</h2>
+	    <table align="center" id="skins" class="table">
+	    	<tr>
+	    		<td colspan="5">
+	    			Comum (Gratuito)
+	    		</td>   
+	    	</tr>
+	    	<tr>
+	    		<td colspan="5">
+	    			<img id="logotipo" src="img/hero_pics/Sombra/Sombra_Skin_Classic.jpg" width="150px" heigth="150px" alt="Sombra-Classic-Skin"><br>Clássico
+	    		</td> 		
+	    	</tr>
+	    	<tr>
+	    		<td colspan="5">
+	    			Raro - 75 <img id="logotipo" src="img/Currency.png" width="20px" heigth="20px" alt="Currency">
+	    		</td>  
+	    	</tr>
+	    	<tr>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/Sombra/Sombra_Skin_Cidro.jpg" width="150px" heigth="150px" alt="Sombra-Cidro-Skin"><br>Cidro		
+	    		</td>  
+	    		 <td>
+	    			<img id="logotipo" src="img/hero_pics/Sombra/Sombra_Skin_Incendio.jpg" width="150px" heigth="150px" alt="Sombra-Incendio-Skin"><br>Incendio
+	    		</td>  
+	    		<td></td>
+	    		<td>
+					<img id="logotipo" src="img/hero_pics/Sombra/Sombra_Skin_Mar.jpg" width="150px" heigth="150px" alt="Sombra-Mar-Skin"><br>Mar
+	    		</td>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/Sombra/Sombra_Skin_Noche.jpg" width="150px" heigth="150px" alt="Sombra-Noche-Skin"><br>Noche
+	    		</td> 		
+	    	</tr>  
+	    	 <tr>
+	    		<td colspan="5">
+	    			Épico - 250 <img id="logotipo" src="img/Currency.png" width="20px" heigth="20px" alt="Currency">
+	    		</td>  
+	    	</tr>
+	    	<tr>
+	    		
+	    		<td></td>  
+	    		 <td>
+	    			<img id="logotipo" src="img/hero_pics/Sombra/Sombra_Skin_Glitch.jpg" width="150px" heigth="150px" alt="Sombra-Glitch-Skin"><br>Glitch
+	    		</td>  
+	    		<td></td>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/Sombra/Sombra_Skin_Virus.jpg" width="150px" heigth="150px" alt="Sombra-Virus-Skin"><br>Virus
+	    		</td> 
+	    		<td></td> 		
+	    	</tr>  
+	  		  	<tr>
+	    		<td colspan="5">
+	    			Épico (Paraíso Congelado) - 750 <img id="logotipo" src="img/Currency.png" width="20px" heigth="20px" alt="Currency">
+	    		</td>   
+	    	</tr>
+	    	<tr>
+	    		<td colspan="5">
+	    			<img id="logotipo" src="img/hero_pics/Sombra/Sombra_Skin_Peppermint.jpg" width="150px" heigth="150px" alt="Sombra-Peppermint-Skin"><br>Peppermint
+	    		</td> 
+	    	</tr>
+	    	<tr>
+	    		<td colspan="5">
+	    			Lendário - 1000 <img id="logotipo" src="img/Currency.png" width="20px" heigth="20px" alt="Currency">
+	    		</td>   
+	    	</tr>
+	    	<tr>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/Sombra/Sombra_Skin_Azúcar.jpg" width="150px" heigth="150px" alt="Sombra-Azúcar-Skin"><br>Azúcar
+	    		</td>  
+	    		 <td>
+	    			<img id="logotipo" src="img/hero_pics/Sombra/Sombra_Skin_Los_Muertos.jpg" width="150px" heigth="150px" alt="Sombra-Los-Muertos-Skin"><br>Los Muertos
+	    		</td>  
+	    		<td></td>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/Sombra/Sombra_Skin_Augmented.jpg" width="150px" heigth="150px" alt="Sombra-Augmented-Skin"><br>Augmented
+	    		</td>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/Sombra/Sombra_Skin_Cyberspace.jpg" width="150px" heigth="150px" alt="Sombra-Cyberspace-Skin"><br>Cyberspace
+	    		</td> 		
+	    	</tr>
+	    </table>
+   	</div>	
+   	<br><br><br>
+   	<div id="direitos" class="col-sm-12"><h6>Copyright © Overpwn - Todos os direitos reservados</h6></div>
+	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/overpwn.js"></script>
+</body>
+</html>

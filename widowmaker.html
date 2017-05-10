@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OverPwn - Widowmaker</title>
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/overpwn.css">
+	<meta charset="utf-8">
+</head>
+<body onload="alternarCorTabela()">
+		
+<!-- Criação da navbar -->
+
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	   <!-- Criação do icone na navbar -->
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="index.html"><img id="logotipo" src="img/overwatch-logo.png" width="25px" heigth="25px" alt="Logotipo"></a>
+	    </div>
+
+	    <!-- Criação do link Home na navbar -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav" id="navbarItems">
+	        <li><a href="index.html">Home</a></li>
+	        	        <li class="dropdown">
+	         <!-- Criação do menu Herois na navbar -->
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="false">Heróis<span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <!-- Criação do  submenu contendo herois Ofensivos dentro do menu Herois na navbar -->
+	            <li class="dropdown-submenu">
+                <a tabindex="-1"><img id="logotipo" src="img/OffenseIcon.png" width="20px" heigth="20px" alt="Ofensivo"><b>Ofensivo</b></a>
+                <ul class="dropdown-menu">
+	                <li><a href="genji.html"><img id="logotipo" src="img/navbar_heroes/Genji_link.png" width="30px" heigth="30px" alt="Genji">Genji</a></li>
+		            <li><a href="mccree.html"><img id="logotipo" src="img/navbar_heroes/McCree_link.png" width="30px" heigth="30px" alt="McCree">McCree</a></li>
+		            <li><a href="pharah.html"><img id="logotipo" src="img/navbar_heroes/Pharah_link.png" width="30px" heigth="30px" alt="Pharah">Pharah</a></li>
+		            <li><a href="reaper.html"><img id="logotipo" src="img/navbar_heroes/Reaper_link.png" width="30px" heigth="30px" alt="Reaper">Reaper</a></li>
+		            <li><a href="soldier76.html"><img id="logotipo" src="img/navbar_heroes/Soldier_76_link.png" width="30px" heigth="30px" alt="Soldier 76">Soldado 76</a></li>
+		            <li><a href="sombra.html"><img id="logotipo" src="img/navbar_heroes/Sombra_link.png" width="30px" heigth="30px" alt="Sombra">Sombra</a></li>
+		            <li><a href="tracer.html"><img id="logotipo" src="img/navbar_heroes/Tracer_link.png" width="30px" heigth="30px" alt="Tracer">Tracer</a></li>
+                </ul>
+              </li>
+              	<!-- Criação do  submenu contendo herois Defensivos dentro do menu Herois na navbar -->
+	            <li class="dropdown-submenu">
+                <a tabindex="-1"><img id="logotipo" src="img/DefenseIcon.png" width="20px" heigth="20px" alt="Defensivo"><b>Defensivo</b></a>
+                <ul class="dropdown-menu">
+	                <li><a href="bastion.html"><img id="logotipo" src="img/navbar_heroes/Bastion_link.png" width="30px" heigth="30px" alt="Bastion">Bastion</a></li>
+		            <li><a href="hanzo.html"><img id="logotipo" src="img/navbar_heroes/Hanzo_link.png" width="30px" heigth="30px" alt="Hanzo">Hanzo</a></li>
+		            <li><a href="junkrat.html"><img id="logotipo" src="img/navbar_heroes/Junkrat_link.png" width="30px" heigth="30px" alt="Junkrat">Junkrat</a></li>
+		            <li><a href="mei.html"><img id="logotipo" src="img/navbar_heroes/Mei_link.png" width="30px" heigth="30px" alt="Mei">Mei</a></li>
+		            <li><a href="torbjorn.html"><img id="logotipo" src="img/navbar_heroes/Torbjörn_link.png" width="30px" heigth="30px" alt="Torbjörn">Torbjörn</a></li>
+		            <li><a href="#"><img id="logotipo" src="img/navbar_heroes/Widowmaker_link.png" width="30px" heigth="30px" alt="Widowmaker">Widowmaker</a></li>
+                </ul>
+              </li>
+              	<!-- Criação do  submenu contendo herois Tanques dentro do menu Herois na navbar -->
+	            <li class="dropdown-submenu">
+                <a tabindex="-1"><img id="logotipo" src="img/TankIcon.png" width="20px" heigth="20px" alt="Tanque"><b>Tanque</b></a>
+                <ul class="dropdown-menu">
+		            <li><a href="dva.html"><img id="logotipo" src="img/navbar_heroes/D.Va_link.png" width="30px" heigth="30px" alt="D.Va">D.Va</a></li>
+		            <li><a href="orisa.html"><img id="logotipo" src="img/navbar_heroes/Orisa_link.png" width="30px" heigth="30px" alt="Orisa">Orisa</a></li>
+		            <li><a href="reinhardt.html"><img id="logotipo" src="img/navbar_heroes/Reinhardt_link.png" width="30px" heigth="30px" alt="Reinhardt">Reinhardt</a></li>
+		            <li><a href="roadhog.html"><img id="logotipo" src="img/navbar_heroes/Roadhog_link.png" width="30px" heigth="30px" alt="Roadhog">Roadhog</a></li>
+		            <li><a href="winston.html"><img id="logotipo" src="img/navbar_heroes/Winston_link.png" width="30px" heigth="30px" alt="Winston">Winston</a></li>
+		            <li><a href="zarya.html"><img id="logotipo" src="img/navbar_heroes/Zarya_link.png" width="30px" heigth="30px" alt="Zarya">Zarya</a></li>
+                </ul>
+              </li>
+              	<!-- Criação do  submenu contendo herois Suportes dentro do menu Herois na navbar -->
+	            <li class="dropdown-submenu">
+                <a tabindex="-1"><img id="logotipo" src="img/SupportIcon.png" width="20px" heigth="20px" alt="Ofensivo"><b>Suporte</b></a>
+                <ul class="dropdown-menu">
+	                <li><a href="ana.html"><img id="logotipo" src="img/navbar_heroes/Ana_link.png" width="30px" heigth="30px" alt="Ana">Ana</a></li>
+		            <li><a href="lucio.html"><img id="logotipo" src="img/navbar_heroes/Lúcio_link.png" width="30px" heigth="30px" alt="Lúcio">Lúcio</a></li>
+		            <li><a href="mercy.html"><img id="logotipo" src="img/navbar_heroes/Mercy_link.png" width="30px" heigth="30px" alt="Mercy">Mercy</a></li>
+		            <li><a href="symmetra.html"><img id="logotipo" src="img/navbar_heroes/Symmetra_link.png" width="30px" heigth="30px" alt="Symmetra">Symmetra</a></li>
+		            <li><a href="zenyatta.html"><img id="logotipo" src="img/navbar_heroes/Zenyatta_link.png" width="30px" heigth="30px" alt="Zenyatta">Zenyatta</a></li>
+                </ul>
+              </li>
+	        </ul>
+	       </li>
+	        <li class="dropdown">
+	          <!-- Criação do menu Mapas na navbar -->
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="false">Mapas<span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li class="dropdown-submenu">
+	            <!-- Criação do  submenu contendo mapas de Ataque menu Mapas na navbar -->	
+                <a tabindex="-1"><b>Ataque</b></a>
+                <ul class="dropdown-menu">
+	                <li><a href="anubis.html"><img id="logotipo" src="img/navbar_maps/Temple_of_Anubis_link.png" width="30px" heigth="30px" alt="Anubis">Templo de Anúbis</a></li>
+		            <li><a href="hanamura.html"><img id="logotipo" src="img/navbar_maps/Hanamura_link.png" width="30px" heigth="30px" alt="Hanamura">Hanamura</a></li>
+		            <li><a href="volskaya.html"><img id="logotipo" src="img/navbar_maps/Volskaya_Industries_link.png" width="30px" heigth="30px" alt="Volskaya">Indústrias Volskaya</a></li>
+                </ul>
+              </li>
+
+	            <li class="dropdown-submenu">
+	            <!-- Criação do  submenu contendo mapas de Escolta menu Mapas na navbar -->	
+                <a tabindex="-1"><b>Escolta</b></a>
+                <ul class="dropdown-menu">
+	                <li><a href="gibraltar.html"><img id="logotipo" src="img/navbar_maps/Watchpoint-_Gibraltar_link.png" width="30px" heigth="30px" alt="Gibraltar">Observatório: Gibraltar</a></li>
+	            	<li><a href="dorado.html"><img id="logotipo" src="img/navbar_maps/Dorado_link.png" width="30px" heigth="30px" alt="Dorado">Dorado</a></li>
+	           		<li><a href="route66.html"><img id="logotipo" src="img/navbar_maps/Route_66_link.png" width="30px" heigth="30px" alt="Route66">Rota 66</a></li>
+                </ul>
+              </li>
+
+	            <li class="dropdown-submenu">
+	            <!-- Criação do  submenu contendo mapas de Escolta menu Mapas na navbar -->	
+                <a tabindex="-1"><b>Controle</b></a>
+                <ul class="dropdown-menu">
+		             <li><a href="lijiang.html"><img id="logotipo" src="img/navbar_maps/Lijiang_Tower_link.png" width="30px" heigth="30px" alt="Lijiang">Torre Lijiang</a></li>
+		            <li><a href="ilios.html"><img id="logotipo" src="img/navbar_maps/Ilios_link.png" width="30px" heigth="30px" alt="Ilios">Ilios</a></li>
+		            <li><a href="nepal.html"><img id="logotipo" src="img/navbar_maps/Nepal_link.png" width="30px" heigth="30px" alt="Nepal">Nepal</a></li>
+		            <li><a href="oasis.html"><img id="logotipo" src="img/navbar_maps/Oasis_link.png" width="30px" heigth="30px" alt="Oasis">Oásis</a></li>
+                </ul>
+              </li>
+
+	            <li class="dropdown-submenu">
+	            <!-- Criação do  submenu contendo mapas Hibridos menu Mapas na navbar -->	
+                <a tabindex="-1"><b>Híbrido</b></a>
+                <ul class="dropdown-menu">
+	                <li><a href="hollywood.html"><img id="logotipo" src="img/navbar_maps/Hollywood_link.png" width="30px" heigth="30px" alt="Hollywood">Hollywood</a></li>
+	            	<li><a href="kingsrow.html"><img id="logotipo" src="img/navbar_maps/King's_Row_link.png" width="30px" heigth="30px" alt="King's Row">King's Row</a></li>
+	            	<li><a href="numbani.html"><img id="logotipo" src="img/navbar_maps/Numbani_link.png" width="30px" heigth="30px" alt="Numbani">Numbani</a></li>
+	            	<li><a href="eichenwalde.html"><img id="logotipo" src="img/navbar_maps/Eichenwalde_link.png" width="30px" heigth="30px" alt="Eichenwalde">Eichenwalde</a></li>
+                </ul>
+              </li>
+	         </ul>
+	        </li>
+
+	        <li class="dropdown">
+	        <!-- Criação do menu Eventos na navbar -->
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="false">Eventos<span class="caret"></span></a>
+	          	<ul class="dropdown-menu">
+	                <li><a href="summergames.html"><img id="logotipo" src="img/Spray_Summer_Games_2016.png" width="30px" heigth="30px" alt="JogosdeVerao">Jogos de Verão</a></li>
+	            	<li><a href="halloweenterror.html"><img id="logotipo" src="img/Spray_Halloween_Terror.png" width="30px" heigth="30px" alt="TerrordeHalloween">Terror de Halloween</a></li>
+	            	<li><a href="winterwonderland.html"><img id="logotipo" src="img/Spray_Winter_Wonderland.png" width="30px" heigth="30px" alt="ParaisoCongelado">Paraíso Congelado</a></li>
+	            	<li><a href="yearoftherooster.html"><img id="logotipo" src="img/Spray_Year_of_the_Rooster.png" width="30px" heigth="30px" alt="Galo">Ano do Galo</a></li>
+                	<li><a href="insurgence.html">Insurreição</a></li> 
+              	</ul>
+            </li>
+	    </ul>
+	      
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+    </nav>
+    <i align="center">"Um tiro, uma morte."</i>
+    <div class="col-sm-9">
+		
+					Widowmaker é a assassina perfeita: uma matadora paciente e impiedosamente eficiente que não mostra emoção nem remorso.<br><br>
+
+					Acredita-se que, na sua antiga vida, Widowmaker foi casada com Gérard Lacroix, um agente da Overwatch que liderava operações contra a organização terrorista Talon. Depois de diversas tentativas frustradas de eliminar Gérard, a Talon decidiu mudar seu foco para sua esposa, Amélie. Os agentes da Talon a sequestraram e a sujeitaram a um intenso programa de recondicionamento neural. Eles destruíram sua vontade, suprimiram sua personalidade e a reprogramaram como uma agente dormente. Ela eventualmente foi encontrada pelos agentes da Overwatch, aparentemente sem nenhum arranhão, e voltou à sua vida normal.<br><br>
+					
+					Duas semanas depois, ela matou Gérard enquanto ele dormia.<br><br>
+					
+					Com sua missão concluída, Amélie voltou à Talon e eles concluíram o processo de transformá-la em uma arma viva. Ela recebeu extenso treinamento em artes ocultas e, então, sua fisiologia foi alterada, reduzindo drasticamente seu ritmo cardíaco, o que deixou sua pele azul e fria, e entorpeceu sua capacidade de sentir emoções humanas. Amélie já não existia mais.<br><br>
+					
+					Agora, Widowmaker é a assassina mais eficaz da Talon, sentindo muito pouco além da satisfação de um trabalho bem feito.
+  </div>  		
+    	<table id="heroInfo-Defense" class="col-sm-3">
+			<thead>
+				<tr>
+					<td colspan="2" align="center">
+						<b>Widowmaker</b>
+					</td>
+
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+						<img id="logotipo" src="img/hero_pics/Widowmaker/Widowmaker-portrait.jpg" width="150px" heigth="150px" alt="Widowmaker">
+					</td>
+
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<b>Nome Completo</b>
+					</td>
+					<td>
+						Amélie Lacroix
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Idade</b>
+					</td>
+					<td>
+						33 anos
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Função</b>
+					</td>
+					<td>
+						<img id="logotipo" src="img/DefenseIcon.png" width="20px" heigth="20px" alt="Defensivo"> Defensivo
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Afiliações</b>
+					</td>
+					<td>
+						Talon
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Ocupação</b>
+					</td>
+					<td>
+						Assassina
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Base de Operações</b>
+					</td>
+					<td>
+						Annecy, França
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Relacionamentos</b>
+					</td>
+					<td>
+						Gérard (marido, morto)
+					</td>
+				</tr>
+		</table>
+
+
+	<div class="col-sm-12">
+	    <h2 align="center">Cosméticos</h2>
+	    <table align="center" id="skins" class="table">
+	    	<tr>
+	    		<td colspan="5">
+	    			Comum (Gratuito)
+	    		</td>   
+	    	</tr>
+	    	<tr>
+	    		<td colspan="5">
+	    			<img id="logotipo" src="img/hero_pics/Widowmaker/Widowmaker_Skin_Classic.jpg" width="150px" heigth="150px" alt="Widowmaker-Classic-Skin"><br>Clássico
+	    		</td> 		
+	    	</tr>
+	    	<tr>
+	    		<td colspan="5">
+	    			Raro - 75 <img id="logotipo" src="img/Currency.png" width="20px" heigth="20px" alt="Currency">
+	    		</td>  
+	    	</tr>
+	    	<tr>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/Widowmaker/Widowmaker_Skin_Ciel.jpg" width="150px" heigth="150px" alt="Widowmaker-Ciel-Skin"><br>Ciel	
+	    		</td>  
+	    		 <td>
+	    			<img id="logotipo" src="img/hero_pics/Widowmaker/Widowmaker_Skin_Nuit.jpg" width="150px" heigth="150px" alt="Widowmaker-Nuit-Skin"><br>Nuit
+	    		</td>  
+	    		<td></td>
+	    		<td>
+					<img id="logotipo" src="img/hero_pics/Widowmaker/Widowmaker_Skin_Rose.jpg" width="150px" heigth="150px" alt="Widowmaker-Rose-Skin"><br>Rose
+	    		</td>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/Widowmaker/Widowmaker_Skin_Vert.jpg" width="150px" heigth="150px" alt="Widowmaker-Vert-Skin"><br>Vert
+	    		</td> 		
+	    	</tr>  
+	    	 <tr>
+	    		<td colspan="5">
+	    			Épico - 250 <img id="logotipo" src="img/Currency.png" width="20px" heigth="20px" alt="Currency">
+	    		</td>  
+	    	</tr>
+	    	<tr>
+	    		<td></td>  
+	    		 <td>
+	    			<img id="logotipo" src="img/hero_pics/Widowmaker/Widowmaker_Skin_Patina.jpg" width="150px" heigth="150px" alt="Widowmaker-Patina-Skin"><br>Patina
+	    		</td>  
+	    		<td></td>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/Widowmaker/Widowmaker_Skin_Winter.jpg" width="150px" heigth="150px" alt="Widowmaker-Winter-Skin"><br>Winter
+	    		</td> 
+	    	</tr>
+	    		<tr>
+	    		<td colspan="5">
+	    			Lendário (Jogos de Verão)
+	    		</td>   
+	    	</tr>
+	    	<tr>
+	    		<td colspan="5">
+	    			<img id="logotipo" src="img/hero_pics/Widowmaker/summer2016_Widowmaker_skin_Tricolore.jpg" width="150px" heigth="150px" alt="Widowmaker-Tricolore-Skin"><br>Tricolore
+	    		</td> 
+	    	</tr>		  
+	    	<tr>
+	    		<td colspan="5">
+	    			Lendário - 1000 <img id="logotipo" src="img/Currency.png" width="20px" heigth="20px" alt="Currency">
+	    		</td>   
+	    	</tr>
+	    	<tr>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/Widowmaker/Widowmaker_Skin_Odette.jpg" width="150px" heigth="150px" alt="Widowmaker-Odette-Skin"><br>Odette
+	    		</td>  
+	    		 <td>
+	    			<img id="logotipo" src="img/hero_pics/Widowmaker/Widowmaker_Skin_Odile.jpg" width="150px" heigth="150px" alt="Widowmaker-Odile-Skin"><br>Odile
+	    		</td>  
+	    		<td></td>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/Widowmaker/Widowmaker_Skin_Comtesse.jpg" width="150px" heigth="150px" alt="Widowmaker-Comtesse-Skin"><br>Comtesse
+	    		</td>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/Widowmaker/Widowmaker_Skin_Huntress.jpg" width="150px" heigth="150px" alt="Widowmaker-Huntress-Skin"><br>Huntress
+	    		</td> 		
+	    	</tr>
+	    	<tr>
+	    		<td colspan="5">
+	    			Lendário (Pré-Venda)
+	    		</td>   
+	    	</tr>
+	    	<tr>
+	    		<td colspan="5">
+	    			<img id="logotipo" src="img/hero_pics/Widowmaker/Widowmaker_skin_Noire.jpg" width="150px" heigth="150px" alt="Widowmaker-Noire-Skin"><br>Noire
+	    		</td> 
+	    	</tr>
+	    	<tr>
+	    		<td colspan="5">
+	    			Lendário (Insurreição) - 3000 <img id="logotipo" src="img/Currency.png" width="20px" heigth="20px" alt="Currency">
+	    		</td>   
+	    	</tr>
+	    	<tr>
+	    		<td colspan="5">
+	    			<img id="logotipo" src="img/hero_pics/Widowmaker/Widowmaker_skin_Talon.jpg" width="150px" heigth="150px" alt="Widowmaker-Talon-Skin"><br>Talon
+	    		</td> 
+	    	</tr>
+	    </table>
+   	</div>	
+   	<br><br><br>
+   	<div id="direitos" class="col-sm-12"><h6>Copyright © Overpwn - Todos os direitos reservados</h6></div>
+	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/overpwn.js"></script>
+</body>
+</html>

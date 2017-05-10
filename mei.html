@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OverPwn - Mei</title>
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/overpwn.css">
+	<meta charset="utf-8">
+</head>
+<body onload="alternarCorTabela()">
+		
+<!-- Criação da navbar -->
+
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	   <!-- Criação do icone na navbar -->
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="index.html"><img id="logotipo" src="img/overwatch-logo.png" width="25px" heigth="25px" alt="Logotipo"></a>
+	    </div>
+
+	    <!-- Criação do link Home na navbar -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav" id="navbarItems">
+	        <li><a href="index.html">Home</a></li>
+	        	        <li class="dropdown">
+	         <!-- Criação do menu Herois na navbar -->
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="false">Heróis<span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <!-- Criação do  submenu contendo herois Ofensivos dentro do menu Herois na navbar -->
+	            <li class="dropdown-submenu">
+                <a tabindex="-1"><img id="logotipo" src="img/OffenseIcon.png" width="20px" heigth="20px" alt="Ofensivo"><b>Ofensivo</b></a>
+                <ul class="dropdown-menu">
+	                <li><a href="genji.html"><img id="logotipo" src="img/navbar_heroes/Genji_link.png" width="30px" heigth="30px" alt="Genji">Genji</a></li>
+		            <li><a href="mccree.html"><img id="logotipo" src="img/navbar_heroes/McCree_link.png" width="30px" heigth="30px" alt="McCree">McCree</a></li>
+		            <li><a href="pharah.html"><img id="logotipo" src="img/navbar_heroes/Pharah_link.png" width="30px" heigth="30px" alt="Pharah">Pharah</a></li>
+		            <li><a href="reaper.html"><img id="logotipo" src="img/navbar_heroes/Reaper_link.png" width="30px" heigth="30px" alt="Reaper">Reaper</a></li>
+		            <li><a href="soldier76.html"><img id="logotipo" src="img/navbar_heroes/Soldier_76_link.png" width="30px" heigth="30px" alt="Soldier 76">Soldado 76</a></li>
+		            <li><a href="sombra.html"><img id="logotipo" src="img/navbar_heroes/Sombra_link.png" width="30px" heigth="30px" alt="Sombra">Sombra</a></li>
+		            <li><a href="tracer.html"><img id="logotipo" src="img/navbar_heroes/Tracer_link.png" width="30px" heigth="30px" alt="Tracer">Tracer</a></li>
+                </ul>
+              </li>
+              	<!-- Criação do  submenu contendo herois Defensivos dentro do menu Herois na navbar -->
+	            <li class="dropdown-submenu">
+                <a tabindex="-1"><img id="logotipo" src="img/DefenseIcon.png" width="20px" heigth="20px" alt="Defensivo"><b>Defensivo</b></a>
+                <ul class="dropdown-menu">
+	                <li><a href="bastion.html"><img id="logotipo" src="img/navbar_heroes/Bastion_link.png" width="30px" heigth="30px" alt="Bastion">Bastion</a></li>
+		            <li><a href="hanzo.html"><img id="logotipo" src="img/navbar_heroes/Hanzo_link.png" width="30px" heigth="30px" alt="Hanzo">Hanzo</a></li>
+		            <li><a href="junkrat.html"><img id="logotipo" src="img/navbar_heroes/Junkrat_link.png" width="30px" heigth="30px" alt="Junkrat">Junkrat</a></li>
+		            <li><a href="#"><img id="logotipo" src="img/navbar_heroes/Mei_link.png" width="30px" heigth="30px" alt="Mei">Mei</a></li>
+		            <li><a href="torbjorn.html"><img id="logotipo" src="img/navbar_heroes/Torbjörn_link.png" width="30px" heigth="30px" alt="Torbjörn">Torbjörn</a></li>
+		            <li><a href="widowmaker.html"><img id="logotipo" src="img/navbar_heroes/Widowmaker_link.png" width="30px" heigth="30px" alt="Widowmaker">Widowmaker</a></li>
+                </ul>
+              </li>
+              	<!-- Criação do  submenu contendo herois Tanques dentro do menu Herois na navbar -->
+	            <li class="dropdown-submenu">
+                <a tabindex="-1"><img id="logotipo" src="img/TankIcon.png" width="20px" heigth="20px" alt="Tanque"><b>Tanque</b></a>
+                <ul class="dropdown-menu">
+		            <li><a href="dva.html"><img id="logotipo" src="img/navbar_heroes/D.Va_link.png" width="30px" heigth="30px" alt="D.Va">D.Va</a></li>
+		            <li><a href="orisa.html"><img id="logotipo" src="img/navbar_heroes/Orisa_link.png" width="30px" heigth="30px" alt="Orisa">Orisa</a></li>
+		            <li><a href="reinhardt.html"><img id="logotipo" src="img/navbar_heroes/Reinhardt_link.png" width="30px" heigth="30px" alt="Reinhardt">Reinhardt</a></li>
+		            <li><a href="roadhog.html"><img id="logotipo" src="img/navbar_heroes/Roadhog_link.png" width="30px" heigth="30px" alt="Roadhog">Roadhog</a></li>
+		            <li><a href="winston.html"><img id="logotipo" src="img/navbar_heroes/Winston_link.png" width="30px" heigth="30px" alt="Winston">Winston</a></li>
+		            <li><a href="zarya.html"><img id="logotipo" src="img/navbar_heroes/Zarya_link.png" width="30px" heigth="30px" alt="Zarya">Zarya</a></li>
+                </ul>
+              </li>
+              	<!-- Criação do  submenu contendo herois Suportes dentro do menu Herois na navbar -->
+	            <li class="dropdown-submenu">
+                <a tabindex="-1"><img id="logotipo" src="img/SupportIcon.png" width="20px" heigth="20px" alt="Ofensivo"><b>Suporte</b></a>
+                <ul class="dropdown-menu">
+	                <li><a href="ana.html"><img id="logotipo" src="img/navbar_heroes/Ana_link.png" width="30px" heigth="30px" alt="Ana">Ana</a></li>
+		            <li><a href="lucio.html"><img id="logotipo" src="img/navbar_heroes/Lúcio_link.png" width="30px" heigth="30px" alt="Lúcio">Lúcio</a></li>
+		            <li><a href="mercy.html"><img id="logotipo" src="img/navbar_heroes/Mercy_link.png" width="30px" heigth="30px" alt="Mercy">Mercy</a></li>
+		            <li><a href="symmetra.html"><img id="logotipo" src="img/navbar_heroes/Symmetra_link.png" width="30px" heigth="30px" alt="Symmetra">Symmetra</a></li>
+		            <li><a href="zenyatta.html"><img id="logotipo" src="img/navbar_heroes/Zenyatta_link.png" width="30px" heigth="30px" alt="Zenyatta">Zenyatta</a></li>
+                </ul>
+              </li>
+	        </ul>
+	       </li>
+	        <li class="dropdown">
+	          <!-- Criação do menu Mapas na navbar -->
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="false">Mapas<span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li class="dropdown-submenu">
+	            <!-- Criação do  submenu contendo mapas de Ataque menu Mapas na navbar -->	
+                <a tabindex="-1"><b>Ataque</b></a>
+                <ul class="dropdown-menu">
+	                <li><a href="anubis.html"><img id="logotipo" src="img/navbar_maps/Temple_of_Anubis_link.png" width="30px" heigth="30px" alt="Anubis">Templo de Anúbis</a></li>
+		            <li><a href="hanamura.html"><img id="logotipo" src="img/navbar_maps/Hanamura_link.png" width="30px" heigth="30px" alt="Hanamura">Hanamura</a></li>
+		            <li><a href="volskaya.html"><img id="logotipo" src="img/navbar_maps/Volskaya_Industries_link.png" width="30px" heigth="30px" alt="Volskaya">Indústrias Volskaya</a></li>
+                </ul>
+              </li>
+
+	            <li class="dropdown-submenu">
+	            <!-- Criação do  submenu contendo mapas de Escolta menu Mapas na navbar -->	
+                <a tabindex="-1"><b>Escolta</b></a>
+                <ul class="dropdown-menu">
+	                <li><a href="gibraltar.html"><img id="logotipo" src="img/navbar_maps/Watchpoint-_Gibraltar_link.png" width="30px" heigth="30px" alt="Gibraltar">Observatório: Gibraltar</a></li>
+	            	<li><a href="dorado.html"><img id="logotipo" src="img/navbar_maps/Dorado_link.png" width="30px" heigth="30px" alt="Dorado">Dorado</a></li>
+	           		<li><a href="route66.html"><img id="logotipo" src="img/navbar_maps/Route_66_link.png" width="30px" heigth="30px" alt="Route66">Rota 66</a></li>
+                </ul>
+              </li>
+
+	            <li class="dropdown-submenu">
+	            <!-- Criação do  submenu contendo mapas de Escolta menu Mapas na navbar -->	
+                <a tabindex="-1"><b>Controle</b></a>
+                <ul class="dropdown-menu">
+		             <li><a href="lijiang.html"><img id="logotipo" src="img/navbar_maps/Lijiang_Tower_link.png" width="30px" heigth="30px" alt="Lijiang">Torre Lijiang</a></li>
+		            <li><a href="ilios.html"><img id="logotipo" src="img/navbar_maps/Ilios_link.png" width="30px" heigth="30px" alt="Ilios">Ilios</a></li>
+		            <li><a href="nepal.html"><img id="logotipo" src="img/navbar_maps/Nepal_link.png" width="30px" heigth="30px" alt="Nepal">Nepal</a></li>
+		            <li><a href="oasis.html"><img id="logotipo" src="img/navbar_maps/Oasis_link.png" width="30px" heigth="30px" alt="Oasis">Oásis</a></li>
+                </ul>
+              </li>
+
+	            <li class="dropdown-submenu">
+	            <!-- Criação do  submenu contendo mapas Hibridos menu Mapas na navbar -->	
+                <a tabindex="-1"><b>Híbrido</b></a>
+                <ul class="dropdown-menu">
+	                <li><a href="hollywood.html"><img id="logotipo" src="img/navbar_maps/Hollywood_link.png" width="30px" heigth="30px" alt="Hollywood">Hollywood</a></li>
+	            	<li><a href="kingsrow.html"><img id="logotipo" src="img/navbar_maps/King's_Row_link.png" width="30px" heigth="30px" alt="King's Row">King's Row</a></li>
+	            	<li><a href="numbani.html"><img id="logotipo" src="img/navbar_maps/Numbani_link.png" width="30px" heigth="30px" alt="Numbani">Numbani</a></li>
+	            	<li><a href="eichenwalde.html"><img id="logotipo" src="img/navbar_maps/Eichenwalde_link.png" width="30px" heigth="30px" alt="Eichenwalde">Eichenwalde</a></li>
+                </ul>
+              </li>
+	         </ul>
+	        </li>
+
+	        <li class="dropdown">
+	        <!-- Criação do menu Eventos na navbar -->
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="false">Eventos<span class="caret"></span></a>
+	          	<ul class="dropdown-menu">
+	                <li><a href="summergames.html"><img id="logotipo" src="img/Spray_Summer_Games_2016.png" width="30px" heigth="30px" alt="JogosdeVerao">Jogos de Verão</a></li>
+	            	<li><a href="halloweenterror.html"><img id="logotipo" src="img/Spray_Halloween_Terror.png" width="30px" heigth="30px" alt="TerrordeHalloween">Terror de Halloween</a></li>
+	            	<li><a href="winterwonderland.html"><img id="logotipo" src="img/Spray_Winter_Wonderland.png" width="30px" heigth="30px" alt="ParaisoCongelado">Paraíso Congelado</a></li>
+	            	<li><a href="yearoftherooster.html"><img id="logotipo" src="img/Spray_Year_of_the_Rooster.png" width="30px" heigth="30px" alt="Galo">Ano do Galo</a></li>
+                	<li><a href="insurgence.html">Insurreição</a></li> 
+              	</ul>
+            </li>
+	    </ul>
+	      
+	      
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+    </nav>
+    <i align="center">"Vale a pena lutar pelo nosso mundo."</i>
+    <div class="col-sm-9">
+					Mei é uma cientista que faz a luta pela preservação do meio ambiente com suas próprias mãos.<br><br>
+
+					Apesar de muitos atribuírem os aumentos dos fenômenos climáticos inexplicados ao advento de novas tecnologias, o rápido crescimento da população ômnica e o aumento drástico do consumo de recursos, as verdadeiras causas permaneciam desconhecidas. Para achar uma solução, a Overwatch estabeleceu uma série de observatórios ecológicos em locais remotos e críticos pelo mundo.<br><br>
+					
+					Mei-Ling Zhou era um membro dessa iniciativa multifacetada. Uma climatologista sem igual, ela introduziu inovações tecnológicas de primeira linha no campo de manipulação climática que protegeu áreas de risco dentro e fora da Ásia. Foi designado a ela a estação do programa de monitoramento no Observatório: Antártica, quando um desastre aconteceu: uma tempestade polar catastrófica soterrou a instalação e a isolou do mundo exterior, deixando as instalações danificadas e os cientistas presos. Com seus suprimentos acabando aos poucos, eles entraram em um estado crioestático em uma última tentativa de sobreviver até que o resgate pudesse ser feito.<br><br>
+					
+					Mas o resgate nunca veio. Anos depois quando a câmera criogênica foi finalmente descoberta, Mei, ainda em hibernação, foi a única sobrevivente. O mundo em que Mei acordou tinha passado por mudanças consideráveis: a Overwatch já não existia, os problemas climáticos haviam piorado e nenhum dos observatórios ecológicos estavam em operação. Todas as pistas que eles tinha descoberto haviam se perdido.<br><br>
+					
+					Mei decidiu continuar seu trabalho sozinha. Equipada com uma versão portátil de sua tecnologia de manipulação climática, ela viaja ao redor do mundo, na esperança de reestabelecer a rede ecológica e rastrear as causas das ameaças ao ecossistema do planeta.
+					No seu auge, Overwatch possuía um dos armamentos mais avançados do planeta, que remetia de volta à oficina de um habilidoso engenheiro chamado Torbjörn Lindholm.	
+  </div>  		
+    	<table id="heroInfo-Defense" class="col-sm-3">
+			<thead>
+				<tr>
+					<td colspan="2" align="center">
+						<b>Mei</b>
+					</td>
+
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+						<img id="logotipo" src="img/hero_pics/Mei/Mei-portrait.jpg" width="150px" heigth="150px" alt="Mei">
+					</td>
+
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<b>Nome Completo</b>
+					</td>
+					<td>
+						Mei-Ling Zhou
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Idade</b>
+					</td>
+					<td>
+						31 anos
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Função</b>
+					</td>
+					<td>
+						<img id="logotipo" src="img/DefenseIcon.png" width="20px" heigth="20px" alt="Defensivo"> Defensivo
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Afiliações</b>
+					</td>
+					<td>
+						Overwatch (anteriormente)
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Ocupação</b>
+					</td>
+					<td>
+						Climatologista<br>Aventureira
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Base de Operações</b>
+					</td>
+					<td>
+						Xi’an, China
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Relacionamentos</b>
+					</td>
+					<td>
+						Desconhecido
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+
+	<div class="col-sm-12">
+	    <h2 align="center">Cosméticos</h2>
+	    <table align="center" id="skins" class="table">
+	    	<tr>
+	    		<td colspan="5">
+	    			Comum (Gratuito)
+	    		</td>   
+	    	</tr>
+	    	<tr>
+	    		<td colspan="5">
+	    			<img id="logotipo" src="img/hero_pics/Mei/Mei_Skin_Classic.jpg" width="150px" heigth="150px" alt="Mei-Classic-Skin"><br>Clássico
+	    		</td> 		
+	    	</tr>
+	    	<tr>
+	    		<td colspan="5">
+	    			Raro - 75 <img id="logotipo" src="img/Currency.png" width="20px" heigth="20px" alt="Currency">
+	    		</td>  
+	    	</tr>
+	    	<tr>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/Mei/Mei_Skin_Chrysanthemum.jpg" width="150px" heigth="150px" alt="Mei-Chrysanthemum-Skin"><br>Chrysanthemum		
+	    		</td>  
+	    		 <td>
+	    			<img id="logotipo" src="img/hero_pics/Mei/Mei_Skin_Heliotrope.jpg" width="150px" heigth="150px" alt="Mei-Heliotrope-Skin"><br>Heliotrope
+	    		</td>  
+	    		<td></td>
+	    		<td>
+					<img id="logotipo" src="img/hero_pics/Mei/Mei_Skin_Jade.jpg" width="150px" heigth="150px" alt="Mei-Jade-Skin"><br>Jade
+	    		</td>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/Mei/Mei_Skin_Persimmon.jpg" width="150px" heigth="150px" alt="Mei-Persimmon-Skin"><br>Persimmon
+	    		</td> 		
+	    	</tr>  
+	    	 <tr>
+	    		<td colspan="5">
+	    			Épico - 250 <img id="logotipo" src="img/Currency.png" width="20px" heigth="20px" alt="Currency">
+	    		</td>  
+	    	</tr>
+	    	<tr>
+	    		<td></td>  
+	    		 <td>
+	    			<img id="logotipo" src="img/hero_pics/Mei/Mei_Skin_Earthen.jpg" width="150px" heigth="150px" alt="Mei-Earthen-Skin"><br>Earthen
+	    		</td>  
+	    		<td></td>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/Mei/Mei_Skin_Snow_Plum.jpg" width="150px" heigth="150px" alt="Mei-Snow Plum-Skin"><br>Snow Plum
+	    		</td> 
+	    		<td></td> 		
+	    	</tr>  
+	    	<tr>
+	    		<td colspan="5">
+	    			Lendário - 1000 <img id="logotipo" src="img/Currency.png" width="20px" heigth="20px" alt="Currency">
+	    		</td>   
+	    	</tr>
+	    	<tr>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/Mei/Mei_Skin_Firefighter.jpg" width="150px" heigth="150px" alt="Mei-Firefighter-Skin"><br>Firefighter
+	    		</td>  
+	    		 <td>
+	    			<img id="logotipo" src="img/hero_pics/Mei/Mei_Skin_Rescue_Mei.jpg" width="150px" heigth="150px" alt="Mei-Rescue Mei-Skin"><br>Rescue Mei
+	    		</td>  
+	    		<td></td>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/Mei/Mei_Skin_Abominable.jpg" width="150px" heigth="150px" alt="Mei-Abominable-Skin"><br>Abominable
+	    		</td>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/Mei/Mei_Skin_Yeti_Hunter.jpg" width="150px" heigth="150px" alt="Mei-Yeti-Hunter-Skin"><br>Yeti Hunter
+	    		</td> 		
+	    	</tr>
+	    	<tr>
+	    		<td colspan="5">
+	    			Lendário (Paraíso Congelado) - 3000 <img id="logotipo" src="img/Currency.png" width="20px" heigth="20px" alt="Currency">
+	    		</td>   
+	    	</tr>
+	    	<tr>
+	    		<td colspan="5">
+	    			<img id="logotipo" src="img/hero_pics/Mei/mei_skin_mei_rry.jpg" width="150px" heigth="150px" alt="Mei-Meirry-Skin"><br>Mei-rry
+	    		</td> 
+	    	</tr>
+	    	<tr>
+	    		<td colspan="5">
+	    			Lendário (Ano do Galo) - 3000 <img id="logotipo" src="img/Currency.png" width="20px" heigth="20px" alt="Currency">
+	    		</td>   
+	    	</tr>
+	    	<tr>
+	    		<td></td>  
+	    		 <td>
+	    			<img id="logotipo" src="img/hero_pics/Mei/mei_skin_chang_e.jpg" width="150px" heigth="150px" alt="Mei-Chang'e-Skin"><br>Chang'e
+	    		</td>  
+	    		<td></td>
+	    		<td>
+	    			<img id="logotipo" src="img/hero_pics/Mei/mei_skin_luna.jpg" width="150px" heigth="150px" alt="Mei-Luna-Skin"><br>Luna
+	    		</td> 
+	    		<td></td> 		
+	    	</tr>  
+	    </table>
+   	</div>	
+   	<br><br><br>
+   	<div id="direitos" class="col-sm-12"><h6>Copyright © Overpwn - Todos os direitos reservados</h6></div>
+	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/overpwn.js"></script>
+</body>
+</html>
